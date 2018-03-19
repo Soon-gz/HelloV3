@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:myview="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F2F2F2">
+
+
+    <LinearLayout
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#F2F2F2"/>
+        <RelativeLayout
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingRight="@dimen/textview_start"
+            android:paddingLeft="@dimen/textview_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+
+            <ImageView
+                android:id="@+id/publishvideo_image"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/publish_add"
+                 />
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerInParent="true"
+                 />
+
+        </RelativeLayout>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#F2F2F2"/>
+        <LinearLayout
+            android:id="@+id/ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#FFFFFF">
+
+            <EditText
+                android:id="@+id/publishvideo_et"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:textSize="@dimen/textview_text_size"
+                android:hint="请输入内容"
+                android:background="@null"
+                android:minHeight="@dimen/textview_height"
+                android:textColor="@color/black"
+                android:gravity="center_vertical"
+                />
+
+            <ImageView
+                android:padding="5dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="13dp"
+                android:layout_weight="1"
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/et_icon"/>
+        </LinearLayout>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#F2F2F2"/>
+
+        <com.hellobaby.library.widget.TextViewPlus
+            android:id="@+id/aboutme_tv_class"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/textview_height"
+            android:layout_marginTop="1dp"
+            android:background="@color/normal_textview"
+            android:drawableRight="@drawable/et_openicon"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/textview_start"
+            android:paddingRight="@dimen/textview_start"
+            android:hint="班级"
+            android:textColor="@color/et_text_color"
+            android:textSize="@dimen/textview_text_size"
+            myview:right_height="10dp"
+            myview:right_width="15dp" />
+
+        <ListView
+            android:id="@+id/aboutme_lv_class"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:background="@color/normal_textview"
+            android:gravity="center_vertical"
+            android:visibility="gone"/>
+    </LinearLayout>
+</LinearLayout>

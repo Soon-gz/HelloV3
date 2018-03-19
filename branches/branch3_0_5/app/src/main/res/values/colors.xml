@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="video_green">#FF00FF29</color>
+    <color name="text_red">#F96969</color>
+    <color name="normal_background">#F2F2F2</color>
+    <color name="normal_textview">#FFFFFF</color>
+    <color name="colorWeight">#F76969</color>
+    <color name="colorHeight">#FBB03B</color>
+
+    <color name="white">#FFFFFFFF</color>
+    <color name="black">#FF000000</color>
+    <color name="transparent">#00000000</color>
+
+
+
+
+    <color name="et_text_color">#FF000000</color>
+
+    <color name="gray6c">#FFCCCCCC</color>
+</resources>

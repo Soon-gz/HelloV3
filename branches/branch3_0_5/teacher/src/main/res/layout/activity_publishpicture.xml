@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:myview="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F2F2F2"
+    android:orientation="vertical">
+
+    <GridView
+        android:id="@+id/publish_gridView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:paddingLeft="@dimen/screen_content_lr_space"
+        android:paddingRight="@dimen/screen_content_lr_space"
+        android:visibility="visible" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF">
+
+        <RelativeLayout
+            android:id="@+id/publish_rl_video"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:background="#FFFFFF"
+            android:paddingLeft="@dimen/screen_content_lr_space"
+            android:paddingRight="@dimen/screen_content_lr_space"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/publish_iv_videoImg"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="5dp"
+                android:padding="5dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/publish_add" />
+
+            <ImageView
+                android:id="@+id/publish_iv_videoPlayIcon"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/video_play" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:background="#FFFFFF"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/publish_et_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="请输入内容"
+            android:minHeight="@dimen/textview_height"
+            android:paddingBottom="5dp"
+            android:paddingLeft="@dimen/screen_content_lr_space"
+            android:paddingRight="@dimen/screen_content_lr_space"
+            android:paddingTop="5dp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textview_text_size" />
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginRight="13dp"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:src="@drawable/et_icon" />
+    </LinearLayout>
+
+    <com.hellobaby.library.widget.TextViewPlus
+        android:id="@+id/publish_tvplus_class"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/textview_height"
+        android:layout_marginTop="1dp"
+        android:background="@color/normal_textview"
+        android:drawableRight="@drawable/et_openicon"
+        android:gravity="center_vertical"
+        android:hint="班级"
+        android:paddingLeft="@dimen/screen_content_lr_space"
+        android:paddingRight="@dimen/screen_content_lr_space"
+        android:textColor="@color/et_text_color"
+        android:textSize="@dimen/textview_text_size"
+        myview:right_height="10dp"
+        myview:right_width="15dp" />
+
+    <ListView
+        android:id="@+id/publish_listView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:background="@color/normal_textview"
+        android:gravity="center_vertical"
+        android:visibility="gone" />
+
+
+</LinearLayout>
+
+
+

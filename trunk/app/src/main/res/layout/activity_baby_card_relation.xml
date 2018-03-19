@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_baby_card_relation"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/normal_background"
+    tools:context="com.abings.baby.ui.babyCard.babyCardRelations.BabyCardRelationActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/babycard_relation_head_img"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/head_holder"/>
+
+        <View style="@style/libCommon_divider_line"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+            <TextView
+                style="@style/babycardtext"
+                android:layout_marginLeft="10dp"
+                android:text="姓名"/>
+
+            <EditText
+                android:id="@+id/babycard_relation_name"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="20dp"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:background="@null"
+                android:hint="接送卡使用者姓名"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <View style="@style/libCommon_divider_line"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+            <TextView
+                style="@style/babycardtext"
+                android:layout_marginLeft="10dp"
+                android:text="关系"/>
+
+            <TextView
+                android:id="@+id/babycard_relation_ship"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="20dp"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:gravity="center_vertical"
+                android:hint="接送卡使用者和宝宝的关系"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <View style="@style/libCommon_divider_line"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+            <TextView
+                style="@style/babycardtext"
+                android:layout_marginLeft="10dp"
+                android:text="电话"/>
+
+            <EditText
+                android:id="@+id/babycard_relation_phone"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="20dp"
+                android:inputType="number"
+                android:textSize="14sp"
+                android:background="@null"
+                android:textColor="@color/black"
+                android:hint="接送卡使用者电话"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/babycard_relation_surebtn"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"
+        style="@style/babycardbtn" />
+
+
+</RelativeLayout>

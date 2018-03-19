@@ -1,0 +1,480 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.abings.baby.teacher">
+
+    <permission
+        android:name="com.abings.baby.teacher.permission.JPUSH_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <!-- Required  一些系统要求的权限，如访问网络等 -->
+    <uses-permission android:name="com.abings.baby.teacher.permission.JPUSH_MESSAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+
+    <!-- Optional for location -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.SET_DEBUG_APP" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+
+    <application
+        android:name=".ZSApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".ui.splash.SplashActivity"
+            android:theme="@style/FullscreenTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.login.LoginActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/FullscreenTheme"
+            android:windowSoftInputMode="stateVisible|adjustPan" />
+        <activity
+            android:name=".ui.login.forgetpwd.ForgetPwdActivity"
+            android:theme="@style/FullscreenTheme" />
+        <activity
+            android:name=".ui.login.register.RegisterActivity"
+            android:theme="@style/FullscreenTheme" />
+        <activity
+            android:name=".ui.changepwd.ChangePwdActivity"
+            android:theme="@style/FullscreenTheme" />
+        <activity
+            android:name=".ui.main.MainActivity"
+            android:theme="@style/FullscreenTheme" />
+        <activity
+            android:name=".ui.scan.ScanActivity"
+            android:theme="@style/FullscreenTheme" />
+        <activity
+            android:name=".ui.msg.MsgActivity"
+            android:theme="@style/FullscreenTheme" />
+        <activity
+            android:name=".ui.msg.build.MsgBuildActivity"
+            android:theme="@style/FullscreenTheme" />
+        <activity
+            android:name=".ui.msg.detail.MsgDetailActivity"
+            android:theme="@style/FullscreenTheme" />
+        <activity
+            android:name=".ui.publishpicture.PublishPictureActivity"
+            android:theme="@style/FullscreenTheme"
+            android:windowSoftInputMode="stateVisible|adjustPan" />
+        <activity
+            android:name=".ui.publishvideo.VideoRecordActivity"
+            android:theme="@style/FullscreenTheme" />
+        <activity
+            android:name=".ui.msg.MsgCenterActivity"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait"
+            android:theme="@style/FullscreenTheme" />
+        <activity
+            android:name=".ui.Information.FavoriteActivity"
+            android:theme="@style/FullscreenTheme" />
+        <activity
+            android:name=".ui.search.SearchActivity"
+            android:theme="@style/FullscreenTheme" />
+        <activity
+            android:name=".ui.search.InformationSearchActivity"
+            android:theme="@style/FullscreenTheme" />
+        <activity
+            android:name=".ui.attend.AttendClassActivity"
+            android:theme="@style/FullscreenTheme" />
+        <activity
+            android:name=".ui.attend.student.AttendStudentListActivity"
+            android:theme="@style/FullscreenTheme" />
+        <activity
+            android:name=".ui.reviews.ReviewsClassActivity"
+            android:theme="@style/FullscreenTheme" />
+        <activity
+            android:name=".ui.reviews.type.ReviewsTypeActivity"
+            android:theme="@style/FullscreenTheme" />
+        <activity
+            android:name=".ui.reviews.mark.ReviewsMarkActivity"
+            android:theme="@style/FullscreenTheme" />
+        <activity
+            android:name=".ui.reviews.remark.ReviewsReMarkActivity"
+            android:theme="@style/FullscreenTheme" />
+        <activity
+            android:name=".ui.alert.AlertActivity"
+            android:theme="@style/FullscreenTheme" />
+        <activity
+            android:name=".ui.reviews.remarkalert.ReviewsReMarkAlertActivity"
+            android:theme="@style/FullscreenTheme"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ui.publishevent.PublishEventActivity"
+            android:theme="@style/FullscreenTheme" />
+        <activity
+            android:name=".ui.event.EventDetailActivity"
+            android:theme="@style/FullscreenTheme" />
+        <activity
+            android:name=".ui.event.EventListActivity"
+            android:theme="@style/FullscreenTheme" />
+        <activity
+            android:name=".ui.publishteachingplan.PublishTeachingPlanActivity"
+            android:theme="@style/FullscreenTheme" />
+        <activity
+            android:name=".ui.contact.ContactsActivity"
+            android:theme="@style/FullscreenTheme" />
+        <activity
+            android:name=".ui.msg.fm.UnReadActivity"
+            android:theme="@style/FullscreenTheme" />
+        <activity
+            android:name=".ui.publishpicture.VideoPlayActivity"
+            android:theme="@style/FullscreenTheme" />
+        <activity
+            android:name=".ui.Information.WebViewActivity"
+            android:hardwareAccelerated="true"
+            android:theme="@style/FullscreenTheme" />
+        <activity
+            android:name=".ui.aboutapp.AboutAppActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/FullscreenTheme" />
+        <activity
+            android:name=".ui.publishteachingplan.TeachingPlanDetailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/FullscreenTheme" />
+        <activity
+            android:name="com.hellobaby.library.ui.aboutapp.BaseLibAdviceActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/FullscreenTheme" />
+        <activity
+            android:name=".ui.main.fm.school.SchoolVideoPlayActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/FullscreenTheme" />
+        <activity
+            android:name=".ui.changephone.ChangePhoneActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/FullscreenTheme" />
+        <!-- 分享 -->
+        <!-- <meta-data -->
+        <!-- android:name="UMENG_APPKEY" -->
+        <!-- android:value="5847a8c57f2c7435b70004d1" /> -->
+        <!-- <meta-data -->
+        <!-- android:name="UMENG_CHANNEL" -->
+        <!-- android:value="Umeng" /> -->
+
+
+        <!-- <activity -->
+        <!-- android:name="com.tencent.tauth.AuthActivity" -->
+        <!-- android:launchMode="singleTask" -->
+        <!-- android:noHistory="true"> -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="android.intent.action.VIEW" /> -->
+
+
+        <!-- <category android:name="android.intent.category.DEFAULT" /> -->
+        <!-- <category android:name="android.intent.category.BROWSABLE" /> -->
+
+
+        <!-- <data android:scheme="tencent1105381300" /> -->
+        <!-- </intent-filter> -->
+        <!-- </activity> -->
+        <!-- <activity -->
+        <!-- android:name="com.tencent.connect.common.AssistActivity" -->
+        <!-- android:configChanges="orientation|keyboardHidden|screenSize" -->
+        <!-- android:screenOrientation="portrait" -->
+        <!-- android:theme="@android:style/Theme.Translucent.NoTitleBar" /> -->
+        <!-- <activity -->
+        <!-- android:name="com.hellobaby.library.wxapi.WXEntryActivity" -->
+        <!-- android:configChanges="keyboardHidden|orientation|screenSize" -->
+        <!-- android:exported="true" -->
+        <!-- android:screenOrientation="portrait" -->
+        <!-- android:theme="@android:style/Theme.Translucent.NoTitleBar" /> -->
+        <!-- <activity -->
+        <!-- android:name="com.hellobaby.library.WBShareActivity" -->
+        <!-- android:configChanges="keyboardHidden|orientation" -->
+        <!-- android:screenOrientation="portrait"> -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY" /> -->
+
+
+        <!-- <category android:name="android.intent.category.DEFAULT" /> -->
+        <!-- </intent-filter> -->
+        <!-- </activity> -->
+        <!-- <activity -->
+        <!-- android:name="com.sina.weibo.sdk.component.WeiboSdkBrowser" -->
+        <!-- android:configChanges="keyboardHidden|orientation" -->
+        <!-- android:exported="false" -->
+        <!-- android:windowSoftInputMode="adjustResize" /> -->
+
+
+        <!-- <service -->
+        <!-- android:name="com.sina.weibo.sdk.net.DownloadService" -->
+        <!-- android:exported="false" /> -->
+
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="5847a8c57f2c7435b70004d1" />
+
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="com.umeng.qq.tencent.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="tencent1105381300" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.umeng.qq.tencent.AssistActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="com.umeng.socialize.editorpage.ShareActivity"
+            android:excludeFromRecents="true"
+            android:theme="@style/Theme.UMDefault" />
+        <!-- 分享 -->
+        <activity
+            android:name=".ui.recipes.RecipesActivity"
+            android:theme="@style/FullscreenTheme" />
+        <activity
+            android:name=".ui.class_assistant.ClassAssistantActivity"
+            android:theme="@style/FullscreenTheme" />
+        <activity
+            android:name=".ui.class_assistant.search.ClassAssistantSearchActivity"
+            android:theme="@style/FullscreenTheme" />
+        <activity
+            android:name=".ui.class_assistant.ClassAssistantWebViewActivity"
+            android:theme="@style/FullscreenTheme" />
+        <activity
+            android:name=".ui.publishteachingplan.TeachingPlanListActivity"
+            android:theme="@style/FullscreenTheme" />
+        <activity
+            android:name=".ui.aboutapp.AdviceActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/FullscreenTheme" />
+        <activity
+            android:name=".ui.event.EventJoinDetailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/FullscreenTheme" />
+
+        <!-- 推送 -->
+
+
+        <!-- Rich push 核心功能 since 2.0.6 -->
+        <activity
+            android:name="cn.jpush.android.ui.PopWinActivity"
+            android:exported="false"
+            android:theme="@style/MyDialogStyle" />
+
+        <!-- Required SDK核心功能 -->
+        <activity
+            android:name="cn.jpush.android.ui.PushActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:exported="false"
+            android:theme="@android:style/Theme.NoTitleBar">
+            <intent-filter>
+                <action android:name="cn.jpush.android.ui.PushActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="com.abings.baby.teacher" />
+            </intent-filter>
+        </activity>
+        <!-- Required  SDK核心功能 -->
+        <service
+            android:name="cn.jpush.android.service.DownloadService"
+            android:enabled="true"
+            android:exported="false" />
+
+        <!-- Required SDK 核心功能 -->
+        <!-- 可配置android:process参数将PushService放在其他进程中 -->
+        <service
+            android:name="cn.jpush.android.service.PushService"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTER" />
+                <action android:name="cn.jpush.android.intent.REPORT" />
+                <action android:name="cn.jpush.android.intent.PushService" />
+                <action android:name="cn.jpush.android.intent.PUSH_TIME" />
+            </intent-filter>
+        </service>
+
+        <!-- since 1.8.0 option 可选项。用于同一设备中不同应用的JPush服务相互拉起的功能。 -->
+        <!-- 若不启用该功能可删除该组件，将不拉起其他应用也不能被其他应用拉起 -->
+        <service
+            android:name="cn.jpush.android.service.DaemonService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.DaemonService" />
+
+                <category android:name="com.abings.baby.teacher" />
+            </intent-filter>
+        </service>
+
+        <!-- Required SDK核心功能 -->
+        <receiver
+            android:name="cn.jpush.android.service.PushReceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter android:priority="1000">
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED_PROXY" /> <!-- Required  显示通知栏 -->
+                <category android:name="com.abings.baby.teacher" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+            <!-- Optional -->
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+
+        <!-- Required SDK核心功能 -->
+        <receiver
+            android:name="cn.jpush.android.service.AlarmReceiver"
+            android:exported="false" />
+
+        <!-- User defined.  For test only  用户自定义的广播接收器 -->
+        <receiver
+            android:name=".jpush.MyReceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTRATION" /> <!-- Required  用户注册SDK的intent -->
+                <action android:name="cn.jpush.android.intent.UNREGISTRATION" />
+                <action android:name="cn.jpush.android.intent.MESSAGE_RECEIVED" /> <!-- Required  用户接收SDK消息的intent -->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED" /> <!-- Required  用户接收SDK通知栏信息的intent -->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_OPENED" /> <!-- Required  用户打开自定义通知栏的intent -->
+                <action android:name="cn.jpush.android.intent.ACTION_RICHPUSH_CALLBACK" /> <!-- Optional 用户接受Rich Push Javascript 回调函数的intent -->
+                <action android:name="cn.jpush.android.intent.CONNECTION" /> <!-- 接收网络变化 连接/断开 since 1.6.3 -->
+                <category android:name="com.abings.baby.teacher" />
+            </intent-filter>
+        </receiver>
+
+        <!-- Required  . Enable it you can get statistics data with channel -->
+        <meta-data
+            android:name="JPUSH_CHANNEL"
+            android:value="developer-default" />
+
+        <!-- 发布版***appkey -->
+        <!-- android:value="004f8bd9736acd193d514c6d" -->
+        <!-- 测试版***appkey -->
+        <!-- android:value="24928e4ebf690415305b099b" -->
+        <meta-data
+            android:name="JPUSH_APPKEY"
+            android:value="004f8bd9736acd193d514c6d" /> <!-- </>值来自开发者平台取得的AppKey -->
+        <activity
+            android:name=".ui.PrizeDraw.PrizeDrawHtmlActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/FullscreenTheme" />
+        <activity
+            android:name=".ui.PrizeDraw.LuckyDrawActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/FullscreenTheme" />
+        <activity
+            android:name=".ui.PrizeDraw.PrizeDetail.PrizeDetailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/FullscreenTheme" />
+        <activity
+            android:name=".ui.PrizeDraw.history.PrizeHistoryActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/FullscreenTheme" />
+        <activity
+            android:name=".ui.PrizeDraw.Adress.PrizeAdressActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/FullscreenTheme" />
+        <activity
+            android:name=".ui.PrizeDraw.prizeRule.PrizeRuleActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/FullscreenTheme" />
+        <activity
+            android:name=".ui.PrizeDraw.sharePrize.SharePrizeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/FullscreenTheme" />
+        <activity
+            android:name=".ui.calendar.CalendarActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/FullscreenTheme" />
+        <activity
+            android:name=".ui.PrizeDraw.history.prizeDetail.PrizeHistoryDetail"
+            android:screenOrientation="portrait"
+            android:theme="@style/FullscreenTheme" />
+        <activity
+            android:name=".ui.Information.InfoSearchActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/FullscreenTheme" />
+        <activity
+            android:name=".ui.Information.InformationWebViewActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/FullscreenTheme" />
+        <activity
+            android:name=".ui.attendanceManager.AttendanceActivity"
+            android:theme="@style/FullscreenTheme" />
+        <activity
+            android:name=".ui.attendanceManager.AttenceHistoryActivity"
+            android:theme="@style/FullscreenTheme" />
+        <activity
+            android:name=".ui.attendanceManager.AttendenceDetailActivity"
+            android:theme="@style/FullscreenTheme" />
+        <activity
+            android:name=".ui.publishvideo.VideoEditActivity"
+            android:theme="@style/FullscreenTheme" />
+        <activity
+            android:name=".ui.attendanceManager.AttendanceSchoolMasterActivity"
+            android:theme="@style/FullscreenTheme" />
+        <activity
+            android:name=".ui.attendanceManager.AskForLeaveManagerActivity"
+            android:theme="@style/FullscreenTheme" />
+        <activity
+            android:name=".ui.attendanceManager.AskForLeaveDetailActivity"
+            android:theme="@style/FullscreenTheme" />
+        <activity
+            android:name=".ui.attendanceManager.AskForLeaveHistoryActivity"
+            android:theme="@style/FullscreenTheme" />
+        <activity
+            android:name=".ui.attendanceManager.SchoolPersonDetailActivity"
+            android:theme="@style/FullscreenTheme" />
+        <activity android:name=".ui.main.fm.school.SchoolMasterChooseActivity"
+            android:theme="@style/transcutestyle"></activity>
+    </application>
+
+</manifest>

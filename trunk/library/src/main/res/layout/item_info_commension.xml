@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/commension_item"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/head_Img"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_margin="8dp"
+                android:src="@drawable/head_holder"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="6"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_marginTop="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="30dp">
+                <TextView
+                    android:id="@+id/info_detail_comment_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:layout_centerVertical="true"
+                    android:textStyle="bold"
+                    android:text="夏大琴"/>
+                <TextView
+                    android:id="@+id/info_detail_comment_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:textColor="@color/btnUnable"
+                    android:textSize="12sp"
+                    android:text="6月1日  10:45"/>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/info_detail_content_return_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/info_decontent_return_ts"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="回复 "/>
+                <TextView
+                    android:id="@+id/info_decontent_return_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:text=""/>
+
+                <TextView
+                    android:id="@+id/info_decontent_return_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:layout_marginRight="10dp"
+                    android:text="牛逼"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_marginTop="10dp"
+        style="@style/libCommon_divider_line" />
+</LinearLayout>

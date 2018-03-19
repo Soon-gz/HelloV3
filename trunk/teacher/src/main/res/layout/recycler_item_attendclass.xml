@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/all_rl"
+    android:layout_width="match_parent"
+    android:layout_height="75dp"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingLeft="12dp"
+    android:paddingRight="12dp">
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:gravity="center"
+            android:id="@+id/attendClassItem_tv_className"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:paddingBottom="2dp"
+            android:text="班级一"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/tv_shang"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="15dp"
+            android:background="@drawable/attend_circle_absence_bg"
+            android:gravity="center"
+            android:text="上午\n未完成"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/attend_circle_absence_bg"
+            android:gravity="center"
+            android:text="下午\n未完成"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:id="@+id/tv_xia" />
+
+    </LinearLayout>
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_marginRight="10dp"-->
+    <!--android:gravity="center"-->
+    <!--android:orientation="vertical">-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/attendClassItem_tv_vacation"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginBottom="5dp"-->
+    <!--android:text="0"-->
+    <!--android:textSize="12sp"/>-->
+
+    <!--<TextView-->
+    <!--android:layout_width="20dp"-->
+    <!--android:layout_height="20dp"-->
+    <!--android:background="@drawable/attend_circle_vacation_bg"-->
+    <!--android:gravity="center"-->
+    <!--android:text="假"-->
+    <!--android:textColor="@color/white"-->
+    <!--android:textSize="13sp"/>-->
+    <!--</LinearLayout>-->
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_marginRight="10dp"-->
+    <!--android:gravity="center"-->
+    <!--android:orientation="vertical">-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/attendClassItem_tv_absence"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginBottom="5dp"-->
+    <!--android:text="0"-->
+    <!--android:textSize="12sp"/>-->
+
+    <!--<TextView-->
+    <!--android:layout_width="20dp"-->
+    <!--android:layout_height="20dp"-->
+    <!--android:background="@drawable/attend_circle_absence_bg"-->
+    <!--android:gravity="center"-->
+
+    <!--android:text="未"-->
+    <!--android:textColor="@color/white"-->
+    <!--android:textSize="13sp"/>-->
+    <!--</LinearLayout>-->
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_marginRight="15dp"-->
+    <!--android:gravity="center"-->
+    <!--android:orientation="vertical">-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/attendClassItem_tv_attend"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginBottom="5dp"-->
+    <!--android:text="0"-->
+    <!--android:textSize="12sp"/>-->
+
+    <!--<TextView-->
+    <!--android:layout_width="20dp"-->
+    <!--android:layout_height="20dp"-->
+    <!--android:background="@drawable/attend_circle_attend_bg"-->
+    <!--android:gravity="center"-->
+    <!--android:text="到"-->
+    <!--android:textColor="@color/white"-->
+    <!--android:textSize="13sp"/>-->
+    <!--</LinearLayout>-->
+    <!--</LinearLayout>-->
+
+    <View
+        style="@style/common_divider_line"
+        android:layout_alignParentBottom="true" />
+</RelativeLayout>

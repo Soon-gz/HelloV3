@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white">
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/baseMsgBox_rv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        android:layout_marginBottom="43dp"
+        android:scrollbars="none"/>
+
+    <TextView
+        android:id="@+id/list_is_null_tv"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <View
+        style="@style/libCommon_divider_line"
+        android:layout_above="@+id/bottom_check_frame"></View>
+
+    <FrameLayout
+        android:id="@+id/bottom_check_frame"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="43dp">
+
+        <LinearLayout
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:layout_height="43dp">
+            <TextView
+                android:id="@+id/unread_all"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/title_size"
+                android:text="未读"/>
+
+            <LinearLayout
+                android:id="@+id/date_and_unread"
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/date_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        android:textColor="@color/result_view"
+                        android:text="更新日期："/>
+                    <TextView
+                        android:id="@+id/update_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/result_view"
+                        android:textSize="12sp"
+                        android:text="2017/5/18"/>
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/unread_number"
+                    android:textSize="12sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0封未读"/>
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/delete_msg"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:padding="12dp"
+                android:gravity="center"
+                android:src="@drawable/del_icon"/>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="43dp">
+            <ImageView
+                android:id="@+id/delete_all_msg_image"
+                android:layout_width="55dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:src="@drawable/delete_red"/>
+        </RelativeLayout>
+
+
+    </FrameLayout>
+
+
+
+</RelativeLayout>

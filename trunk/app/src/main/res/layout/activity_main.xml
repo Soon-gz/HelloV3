@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.abings.baby.ui.main.MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <com.hellobaby.library.widget.custom.NoScrollViewPager
+            android:id="@+id/main_viewpager"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/main_ll_title"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#FF333333"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/main_iv_baby"
+                style="@style/mainBottomButton"
+                android:src="@drawable/main_babynormal_icon"/>
+
+            <ImageView
+                android:id="@+id/main_iv_school"
+                style="@style/mainBottomButton"
+                android:src="@drawable/selector_main_school"/>
+
+            <ImageView
+                android:id="@+id/main_iv_add"
+                style="@style/mainBottomButton"
+                android:background="@android:color/background_dark"
+                android:src="@drawable/main_publish"/>
+
+            <ImageView
+                android:id="@+id/main_iv_news"
+                style="@style/mainBottomButton"
+                android:src="@drawable/selector_main_news"/>
+
+            <ImageView
+                android:id="@+id/main_iv_me"
+                style="@style/mainBottomButton"
+                android:src="@drawable/selector_main_me"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>
+

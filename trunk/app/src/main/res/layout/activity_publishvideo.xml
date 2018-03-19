@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F2F2F2">
+
+
+    <LinearLayout
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#F2F2F2"/>
+        <RelativeLayout
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingLeft="@dimen/screen_content_lr_space"
+            android:paddingRight="@dimen/screen_content_lr_space"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/publishvideo_image"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/publish_add"/>
+            <ImageView
+                android:id="@+id/publishvideo_iv_playIcon"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/video_play"
+                android:visibility="gone"
+                android:layout_centerInParent="true"/>
+
+        </RelativeLayout>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#F2F2F2"/>
+        <LinearLayout
+            android:id="@+id/ll"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#FFFFFF"
+            android:baselineAligned="false">
+
+            <EditText
+                android:id="@+id/publishvideo_et"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/screen_content_lr_space"
+                android:paddingRight="@dimen/screen_content_lr_space"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:textSize="@dimen/textview_text_size"
+                android:hint="请输入标题"
+                android:background="@null"
+                android:lines="1"
+                android:maxLength="13"
+                android:minHeight="@dimen/textview_height"
+                android:textColor="@color/black"
+                android:gravity="center_vertical"
+                />
+        </LinearLayout>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#F2F2F2"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/textview_height"
+            android:layout_marginTop="1dp"
+            android:background="@color/normal_textview"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/screen_content_lr_space"
+            android:paddingRight="@dimen/screen_content_lr_space">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/textview_height"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="是否公开相册"
+                android:textColor="@color/et_text_color"
+                android:textSize="@dimen/textview_text_size"
+                android:id="@+id/textView4" />
+            <com.hellobaby.library.widget.ToggleButton
+                xmlns:myview="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/publish_video_tbtn_public"
+                android:layout_width="40dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="20dp"
+                android:gravity="center_vertical"
+                myview:isDefaultOn="false" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white">
+
+    <TextView
+        android:id="@+id/libMsgDetail_tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:maxLines="1"
+        android:text="标题"
+        android:textColor="@color/black"
+        android:textSize="28sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/libMsgDetail_tv_subTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/libMsgDetail_tv_title"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="5dp"
+        android:textColor="@android:color/darker_gray"
+        android:text="收件人|发件人：人名(灰色)"/>
+
+    <TextView
+        android:id="@+id/libMsgDetail_tv_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/libMsgDetail_tv_subTitle"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="5dp"
+        android:text="正文内容正文内容正文内容正文内容正文内容正文内容正文内容正文内容正文内容正文内容正文内容正文内容正文内容正文内容"
+        android:textColor="@color/black"/>
+</RelativeLayout>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:id="@+id/activity_base_lib_about_app"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/normal_background"
+
+    tools:context="com.hellobaby.library.ui.aboutapp.BaseLibAboutApp">
+
+    <LinearLayout
+        android:id="@+id/lib_about_app_userservice"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            style="@style/lib_about_app_text"
+            android:text="@string/user_service"
+            />
+        <ImageView
+            style="@style/lib_about_app_image"
+            android:src="@drawable/advice_arrow"/>
+    </LinearLayout>
+    <View style="@style/libCommon_divider_line"/>
+    <LinearLayout
+        android:background="@color/white"
+        android:id="@+id/lib_about_app_tofriends"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            style="@style/lib_about_app_text"
+            android:text="@string/to_friends"
+            />
+        <ImageView
+            style="@style/lib_about_app_image"
+            android:src="@drawable/advice_arrow"/>
+    </LinearLayout>
+    <View style="@style/libCommon_divider_line"/>
+    <LinearLayout
+        android:background="@color/white"
+        android:id="@+id/lib_about_app_advices"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            style="@style/lib_about_app_text"
+            android:text="@string/reverse_advice"
+            />
+        <ImageView
+            style="@style/lib_about_app_image"
+            android:src="@drawable/advice_arrow"/>
+    </LinearLayout>
+    <View style="@style/libCommon_divider_line"/>
+
+    <View style="@style/libCommon_divider_line"/>
+    <View
+        android:layout_marginTop="40dp"
+        style="@style/libCommon_divider_line"/>
+    <LinearLayout
+        android:id="@+id/lib_about_app_clientserver"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            style="@style/lib_about_app_text"
+            android:text="官方网站"
+            />
+        <TextView
+            style="@style/lib_about_app_text"
+            android:layout_weight="3"
+            android:autoLink="all"
+            android:text="www.hellobaobei.com.cn"
+            />
+    </LinearLayout>
+    <View style="@style/libCommon_divider_line"/>
+    <LinearLayout
+        android:id="@+id/lib_about_app_weixinclient"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            style="@style/lib_about_app_text"
+            android:text="微信公众号"
+            />
+        <TextView
+            style="@style/lib_about_app_text"
+            android:layout_weight="3"
+            android:text="哈喽baby"
+            />
+    </LinearLayout>
+    <View style="@style/libCommon_divider_line"/>
+
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <ImageView
+            android:layout_above="@+id/lib_about_version"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/advice_logo"/>
+        <TextView
+            android:id="@+id/lib_about_version"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/sbc_header_text"
+            android:textSize="12sp"
+            android:text="@string/client_versionname"/>
+    </RelativeLayout>
+
+</LinearLayout>

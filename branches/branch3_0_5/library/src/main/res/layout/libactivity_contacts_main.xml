@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tl="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:orientation="vertical">
+  <RelativeLayout
+      android:id="@+id/libTitle_RL"
+      android:layout_width="match_parent"
+      android:layout_height="50dp"
+      android:background="@color/libTitleBg">
+
+    <ImageView
+        android:id="@+id/libTitle_iv_left"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:background="@color/transparent"
+        android:paddingBottom="15dp"
+        android:paddingLeft="@dimen/screen_content_lr_space"
+        android:paddingRight="@dimen/screen_content_lr_space"
+        android:paddingTop="15dp"
+        android:src="@drawable/title_left_arrow"/>
+
+    <TextView
+        android:id="@+id/libTitle_tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textColor="@android:color/black"
+        android:text="通讯录"
+        android:textSize="18sp"/>
+    <com.flyco.tablayout.CommonTabLayout
+        tl:tl_textUnselectColor="#999999"
+        android:id="@+id/tab_Fragment_title"
+        android:layout_centerInParent="true"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/corners_bg"
+        android:paddingLeft="1dp"
+        android:paddingRight="1dp"
+        tl:tl_iconVisible="false"
+        tl:tl_indicator_anim_enable="true"
+        tl:tl_indicator_color="#FFFFFF"
+        tl:tl_indicator_corner_radius="6dp"
+        tl:tl_indicator_margin_bottom="1dp"
+        tl:tl_indicator_margin_left="0dp"
+        tl:tl_indicator_margin_right="0dp"
+        tl:tl_indicator_margin_top="1dp"
+        tl:tl_indicator_style="BLOCK"
+        tl:tl_textSelectColor="#000000"
+        tl:tl_textsize="@dimen/common_size"/>
+
+    <ImageView
+        android:id="@+id/libTitle_iv_right"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:paddingBottom="15dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="20dp"
+        android:paddingTop="15dp"
+        android:visibility="gone"/>
+  </RelativeLayout>
+  <android.support.v4.view.ViewPager
+      android:id="@+id/libContacts_viewpager"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+
+  </android.support.v4.view.ViewPager>
+
+
+
+</LinearLayout>

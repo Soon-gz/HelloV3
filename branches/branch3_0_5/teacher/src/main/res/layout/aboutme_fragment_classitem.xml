@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:myview="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.hellobaby.library.widget.TextViewPlus
+        android:id="@+id/tv_classitem"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/textview_height"
+        android:layout_marginTop="1dp"
+        android:background="@color/normal_textview"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/textview_start"
+        android:paddingRight="@dimen/textview_start"
+        android:text="班级"
+        android:textSize="@dimen/textview_text_size"
+        android:textColor="@color/et_text_color"
+        myview:right_height="@dimen/textview_icon_size"
+        myview:right_width="@dimen/textview_icon_size"
+        />
+</LinearLayout>

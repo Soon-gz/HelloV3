@@ -1,0 +1,36 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:background="@color/white"
+    android:id="@+id/main_content"
+    android:orientation="vertical"
+    >
+    <com.github.sundeepk.compactcalendarview.CompactCalendarView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/compactcalendar_view"
+        android:layout_width="fill_parent"
+        android:layout_height="250dp"
+        app:compactCalendarTargetHeight="250dp"
+        app:compactCalendarTextSize="12sp"
+        app:compactCalendarBackgroundColor="@color/normal_background"
+        app:compactCalendarTextColor="#000"
+        app:compactCalendarCurrentDayBackgroundColor="#ffFF0000"
+        app:compactCalendarCurrentSelectedDayBackgroundColor="#000"
+        app:compactCalendarCurrentDayTextColor="#FFF"
+        app:compactCalendarCurrentDayIndicatorStyle="fill_large_indicator"
+        app:compactCalendarEventIndicatorStyle="small_indicator"
+        app:compactCalendarOtherMonthDaysTextColor="#534c4c"
+        app:compactCalendarShouldSelectFirstDayOfMonthOnScroll="true"
+        app:compactCalendarCurrentSelectedDayTextColor="#FFF"
+        />
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/cha_rv_list"
+        android:background="@color/normal_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="1dp">
+    </android.support.v7.widget.RecyclerView>
+
+</LinearLayout>

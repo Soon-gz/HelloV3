@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tl="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@color/normal_background">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/news_image_head"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/head_holder"/>
+
+        <ImageView
+            android:id="@+id/news_search"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:padding="9dp"
+            android:layout_marginRight="3dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/titlebar_search"
+            android:layout_alignParentRight="true" />
+
+        <ImageView
+            android:id="@+id/news_hint"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:padding="9dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/news_search"
+            android:src="@drawable/commension"/>
+
+        <com.flyco.tablayout.CommonTabLayout
+            tl:tl_textUnselectColor="#CCCCCC"
+            android:id="@+id/news_iv_center"
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:background="@drawable/corners_bg"
+            android:paddingLeft="1dp"
+            android:paddingRight="1dp"
+            tl:tl_iconVisible="false"
+            tl:tl_indicator_anim_enable="true"
+            tl:tl_indicator_color="#FFFFFF"
+            tl:tl_indicator_corner_radius="6dp"
+            tl:tl_indicator_margin_bottom="1dp"
+            tl:tl_indicator_margin_left="0dp"
+            tl:tl_indicator_margin_right="0dp"
+            tl:tl_indicator_margin_top="1dp"
+            tl:tl_indicator_style="BLOCK"
+            tl:tl_textSelectColor="#000000"
+            tl:tl_textsize="@dimen/common_size"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/news_image_name"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text=""
+            android:layout_marginLeft="5dp"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/news_image_head"
+            android:layout_toEndOf="@+id/news_image_head" />
+    </RelativeLayout>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/news_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </android.support.v4.view.ViewPager>
+</LinearLayout>

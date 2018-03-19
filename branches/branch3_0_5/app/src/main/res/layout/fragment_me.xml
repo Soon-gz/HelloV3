@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tl="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/fragmentAboutMe_rl_root"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/normal_background"
+                android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/mefragment_ll_babyHead"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="19dp"
+        android:paddingTop="5dp"
+        android:gravity="center_vertical">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/mefragment_iv_babyHead"
+            android:layout_width="@dimen/head_max_height"
+            android:layout_height="@dimen/head_max_height"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/main_titlebar_baby"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@+id/fgme_bt_add"
+            android:layout_toRightOf="@+id/mefragment_iv_babyHead"
+            android:gravity="right">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/fgme_recyclerView_otherBaby"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"/>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/fgme_bt_add"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/addperson_white"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true" />
+    </RelativeLayout>
+
+    <com.flyco.tablayout.CommonTabLayout
+        android:id="@+id/tab_Fragment_title"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/mefragment_tv_babyName"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="@dimen/textview_start"
+        android:layout_marginRight="@dimen/textview_start"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/corners_bg"
+        android:paddingLeft="1dp"
+        android:paddingRight="1dp"
+        tl:tl_iconVisible="false"
+        tl:tl_indicator_anim_enable="true"
+        tl:tl_indicator_color="#FFFFFF"
+        tl:tl_indicator_corner_radius="6dp"
+        tl:tl_indicator_margin_bottom="1dp"
+        tl:tl_indicator_margin_left="0dp"
+        tl:tl_indicator_margin_right="0dp"
+        tl:tl_indicator_margin_top="1dp"
+        tl:tl_indicator_style="BLOCK"
+        tl:tl_textSelectColor="#000000"
+        tl:tl_textUnselectColor="#999999"
+        tl:tl_textsize="@dimen/common_size"/>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/mefragment_vp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tab_Fragment_title"/>
+
+    <TextView
+        android:id="@+id/mefragment_tv_babyName"
+        android:layout_width="@dimen/head_max_height"
+        android:layout_height="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/mefragment_ll_babyHead"
+        android:layout_marginLeft="20dp"
+        android:singleLine="true"
+        android:textColor="@color/black"
+        android:gravity="center"/>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:paddingTop="1dp"
+        android:gravity="center_vertical|right"
+        android:layout_above="@+id/tab_Fragment_title"
+        android:layout_alignRight="@+id/mefragment_ll_babyHead"
+        android:layout_alignEnd="@+id/mefragment_ll_babyHead">
+
+        <ImageView
+            android:id="@+id/aboutme_im_event"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_marginLeft="10dp"
+            android:paddingTop="3dp"
+            android:paddingRight="0dp"
+            android:paddingBottom="3dp"
+            android:paddingLeft="3dp"
+            android:src="@drawable/icon_event"/>
+
+        <ImageView
+            android:id="@+id/aboutme_im_favorite"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_marginLeft="10dp"
+            android:padding="3dp"
+            android:src="@drawable/yellowstarbookicon"/>
+
+        <ImageView
+            android:id="@+id/aboutme_im_contact"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_marginLeft="10dp"
+            android:padding="3dp"
+            android:src="@drawable/contentpersonicon"/>
+
+        <ImageView
+            android:id="@+id/aboutme_im_alert"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_marginLeft="10dp"
+            android:padding="3dp"
+            android:src="@drawable/alerticon"/>
+    </LinearLayout>
+
+
+</RelativeLayout>

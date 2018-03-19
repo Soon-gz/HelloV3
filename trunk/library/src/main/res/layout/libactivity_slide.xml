@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/slide_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FF000000"
+    android:orientation="vertical">
+
+
+    <com.hellobaby.library.ui.slide.PhotoViewPager
+        android:id="@+id/libSlide_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <ProgressBar
+        android:id="@+id/libSlide_loading"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerInParent="true"/>
+
+
+    <RelativeLayout
+        android:id="@+id/libSlideTitle_RL"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="#AA000000">
+
+        <ImageView
+            android:id="@+id/libSlideTitle_iv_left"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:background="@color/transparent"
+            android:paddingBottom="@dimen/title_bottom_top_padding"
+            android:paddingLeft="@dimen/title_padding"
+            android:paddingRight="@dimen/title_padding"
+            android:paddingTop="@dimen/title_bottom_top_padding"
+            android:src="@drawable/title_left_arrow_white"/>
+
+        <TextView
+            android:id="@+id/libSlideTitle_tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/title_title_size"/>
+
+        <ImageView
+            android:id="@+id/libSlideTitle_iv_right"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:scaleType="centerInside"
+            android:paddingBottom="@dimen/title_bottom_top_padding"
+            android:paddingLeft="@dimen/title_padding"
+            android:paddingRight="@dimen/title_padding"
+            android:paddingTop="@dimen/title_bottom_top_padding"
+            android:src="@drawable/title_more_white"/>
+    </RelativeLayout>
+</RelativeLayout>

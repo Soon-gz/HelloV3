@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                style="@style/lib_star_percent"
+                android:background="@drawable/mark_star_percent"
+                android:gravity="center">
+
+    <TextView
+        android:id="@+id/includeStar_tv_score"
+        android:layout_width="12dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:gravity="center|right"
+        android:textColor="@color/white"
+        android:textSize="10sp"/>
+
+    <TextView
+        android:id="@+id/includeStar_tv_score2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/includeStar_tv_score"
+        android:layout_toRightOf="@+id/includeStar_tv_score"
+        android:gravity="center|left"
+        android:text="15"
+        android:textColor="@color/white"
+        android:textSize="10sp"/>
+
+</RelativeLayout>

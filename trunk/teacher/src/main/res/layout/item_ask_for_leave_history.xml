@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/ask_for_history"
+    android:background="@color/white"
+    android:layout_marginBottom="1dp"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/ask_for_leave_create_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2017.10.10"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/ask_for_leave_result_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:layout_alignParentRight="true"
+            android:text="2017.10.31"/>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp">
+
+        <TextView
+            android:id="@+id/ask_for_leave_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="事假 "
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/ask_for_holiday_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/ask_for_leave_type"
+            android:ellipsize="end"
+            android:lines="1"
+            android:text=" (2017.10.11 11:00 - "
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+        <TextView
+            android:id="@+id/ask_for_holiday_end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/ask_for_holiday_start"
+            android:ellipsize="end"
+            android:lines="1"
+            android:text="2017.10.11 16:00)"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/ask_for_his_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:text="待批准" />
+
+    </RelativeLayout>
+
+</LinearLayout>

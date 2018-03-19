@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:myview="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/normal_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/textview_height"
+            android:layout_marginTop="1dp"
+            android:background="@color/normal_textview"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/textview_start"
+            android:paddingRight="@dimen/textview_start"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/textview_height"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="新消息通知"
+                android:textColor="@color/et_text_color"
+                android:textSize="@dimen/textview_text_size" />
+
+            <com.hellobaby.library.widget.ToggleButton
+                android:layout_width="40dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="20dp"
+                android:gravity="center_vertical"
+                myview:isDefaultOn="false" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/textview_height"
+            android:layout_marginTop="1dp"
+            android:background="@color/normal_textview"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:paddingLeft="@dimen/textview_start"
+            android:paddingRight="@dimen/textview_start">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/textview_height"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="信息是否公开给同班家长"
+                android:textColor="@color/et_text_color"
+                android:textSize="@dimen/textview_text_size" />
+
+            <com.hellobaby.library.widget.ToggleButton
+                android:id="@+id/aboutMeSetting_tbtn_public"
+                android:layout_width="40dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="20dp"
+                android:gravity="center_vertical"
+                myview:isDefaultOn="false" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/textview_height"
+            android:layout_marginTop="1dp"
+            android:background="@color/normal_textview"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/textview_start"
+            android:paddingRight="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/textview_height"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="清除缓存"
+                android:textColor="@color/et_text_color"
+                android:textSize="@dimen/textview_text_size" />
+
+            <TextView
+                android:id="@+id/aboutmeSetting_tv_cacheSize"
+                android:layout_width="110dp"
+                android:layout_height="@dimen/textview_height"
+                android:gravity="center_vertical|right"
+                android:text="清理缓存(40.4k)"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <com.hellobaby.library.widget.TextViewPlus
+            android:id="@+id/aboutmeSetting_tv_changepwd"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/textview_height"
+            android:layout_marginTop="1dp"
+            android:background="@color/normal_textview"
+            android:drawableRight="@drawable/et_icon"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/textview_start"
+            android:paddingRight="@dimen/textview_start"
+            android:text="密码"
+            android:textColor="@color/et_text_color"
+            android:textSize="@dimen/textview_text_size"
+            myview:right_height="@dimen/textview_icon_size"
+            myview:right_width="@dimen/textview_icon_size" />
+
+        <TextView
+            android:id="@+id/about"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/textview_height"
+            android:layout_marginTop="41dp"
+            android:background="@color/normal_textview"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/textview_start"
+            android:paddingRight="@dimen/textview_start"
+            android:text="关于"
+            android:textColor="@color/et_text_color"
+            android:textSize="@dimen/textview_text_size" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/aboutme_tv_logout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/textview_height"
+        android:layout_alignParentBottom="true"
+        android:background="@color/normal_textview"
+        android:gravity="center"
+        android:textSize="@dimen/common_size"
+        android:layout_marginBottom="@dimen/me_bottom_margin_bottom"
+        android:text="退出登录"
+        android:textColor="@color/warming_red"/>
+</RelativeLayout>

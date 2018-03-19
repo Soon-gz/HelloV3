@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+    >
+
+    <RelativeLayout
+        android:id="@+id/titile_rv"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="5dp"
+        android:background="@color/subTitleColor"
+        android:paddingRight="15dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@color/normal_background">
+
+            <TextView
+                android:id="@+id/tag_shang"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:gravity="center"
+                android:text="上午"
+                android:textColor="@color/black"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/tag_xia"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:background="@color/subTitleColor"
+                android:gravity="center"
+                android:text="下午"
+                android:textColor="@color/gray6c"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/tag_jiesong"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:background="@color/subTitleColor"
+                android:gravity="center"
+                android:text="接送"
+                android:textColor="@color/gray6c"
+                android:textSize="14sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true">
+
+            <LinearLayout
+                android:id="@+id/icon_ll"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/attendClassItem_view_vacation"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/attend_circle_vacation_bg"
+                    android:gravity="center"
+                    android:text="假"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"/>
+
+                <TextView
+                    android:id="@+id/attendClassItem_view_absence"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/attend_circle_absence_bg"
+                    android:gravity="center"
+                    android:text="未"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"/>
+
+                <TextView
+                    android:id="@+id/attendClassItem_view_attend"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/attend_circle_attend_bg"
+                    android:gravity="center"
+                    android:text="到"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/text_ll"
+                android:layout_width="110dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:visibility="gone"
+                android:gravity="center"
+                >
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center"
+                    android:text="到校"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="离校"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/attendClassItem_rv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom_ll"
+        android:layout_below="@+id/titile_rv"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/attendClass_rv_xia"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom_ll"
+        android:layout_below="@+id/titile_rv"
+        android:visibility="invisible"/>
+
+    <RelativeLayout
+        android:id="@+id/bottom_ll"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:layout_alignParentBottom="true"
+        android:background="@color/subTitleColor"
+        android:paddingRight="15dp">
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:textColor="@color/black"
+            android:textSize="14sp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/total_tv_jia"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/attend_circle_vacation_bg"
+                    android:gravity="center"
+                    android:text="假"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"/>
+
+                <TextView
+                    android:id="@+id/total_tv_wei"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/attend_circle_absence_bg"
+                    android:gravity="center"
+                    android:text="未"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"/>
+
+                <TextView
+                    android:id="@+id/total_tv_dao"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/attend_circle_attend_bg"
+                    android:gravity="center"
+                    android:text="到"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/attendClass_rv_jiesong"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/titile_rv"
+        android:visibility="invisible"/>
+</RelativeLayout>

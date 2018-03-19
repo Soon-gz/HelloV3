@@ -1,0 +1,86 @@
+<resources>
+    <string name="app_name">Library</string>
+    <string name="pwdutils_repeat_regular">^.*(.)\\1{%s}.*$</string>
+    <string name="pwdutils_pwd_easy">您输入的密码过于简单</string>
+
+    <!--扫描界面的提示语-->
+    <string name="capture_parse_image_ok">解析成功，结果为:</string>
+    <string name="capture_parse_image_err">解析图片失败</string>
+    <string name="capture_scaning">正在扫描...</string>
+    <string name="capture_qrimage_select">选择二维码图片</string>
+    <string name="capture_msg_camera_framework_bug">抱歉，Android相机出现问题。您可能需要重启设备。</string>
+    <string name="capture_btn_ok">确定</string>
+    <attr name="type">
+        <enum name="none" value="0" />
+        <enum name="circle" value="1" />
+        <enum name="rounded_rect" value="2" />
+    </attr>
+    <attr name="borderColor" format="color" />
+    <attr name="borderWidth" format="dimension" />
+    <attr name="rectRoundRadius" format="dimension" />
+
+    <declare-styleable name="PictureShape">
+        <attr name="type" />
+        <attr name="borderColor" />
+        <attr name="borderWidth" />
+        <attr name="rectRoundRadius" />
+    </declare-styleable>
+
+
+    <string name="login_username">手机号</string>
+    <string name="login_pwd">密码</string>
+    <string name="digits">0123456789abcdefghigklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ</string>
+
+    <string name="editExit_dialog_title">提示</string>
+    <string name="editExit_dialog_message">是否放弃本次编辑？</string>
+    <string name="editExit_dialog_positive">放弃</string>
+    <string name="editExit_dialog_negative">继续编辑</string>
+
+    <string name="image">图片</string>
+    <string name="all_image">所有图片</string>
+    <string name="preview">预览</string>
+    <string name="msg_no_camera">无法启用系统相机</string>
+    <string name="msg_amount_limit">已经达到最高选择数量</string>
+    <string name="done">完成</string>
+    <string name="done_with_count">完成(%1$d/%2$d)</string>
+    <string name="image_index">%1$d/%2$d</string>
+    <string name="delete">删除</string>
+    <string name="deleted_a_photo">删除了一张图片</string>
+    <string name="confirm_to_delete">确认删除？</string>
+    <string name="yes">确定</string>
+    <string name="cancel">取消</string>
+    <string name="undo">撤消</string>
+
+    <!-- 关于app -->
+    <string name="user_service">用户服务条款</string>
+    <string name="to_friends">推荐给好友</string>
+    <string name="reverse_advice">意见反馈</string>
+    <string name="client_versionname">V3.0.1</string>
+    <string name="advice_hint">请输入您的意见反馈(250字以内)</string>
+    <string name="advice_email">邮箱：</string>
+    <string name="advice_email_hint">请输入您的邮箱</string>
+    <string name="advice_Phone">手机：</string>
+    <string name="advice_Phone_hint">请输入您的手机号</string>
+
+
+    <string name="hello">Hello World, JPush!</string>
+    <string name="tag_hint">Tag为大小写字母，数字，下划线,中文， 多个用以逗号分隔</string>
+    <string name="alias_hint">Alias为大小写字母，数字，下划线</string>
+    <string name="style_hint">style为数字</string>
+    <string name="error_style_empty">style不能为空</string>
+    <string name="error_alias_empty">alias不能为空</string>
+    <string name="error_tag_empty">tag不能为空</string>
+    <string name="error_tag_gs_empty">格式不对</string>
+    <string name="error_network">网络连接异常,初始化失败 请检查网络！</string>
+    <string name="logining">程序在后台执行, 请查看日志！</string>
+    <string name="setting_su">设置成功</string>
+    <string name="ask_for_leave">请假审批</string>
+
+    <!--babycard -->
+    <string name="addbtnhint">添加一个接送卡使用者</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+</resources>

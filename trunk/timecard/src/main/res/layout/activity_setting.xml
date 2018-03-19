@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bg"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"/>
+
+    <LinearLayout
+        android:id="@+id/setting_ll"
+        android:layout_width="650dp"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:background="@drawable/corner_bg_default"
+        android:orientation="vertical"
+        android:paddingTop="24dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="设置"
+            android:textColor="@color/black"
+            android:textSize="38sp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="42.6dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/setting_iv_hand"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_marginRight="20dp"
+                    android:src="@drawable/selector_setting_selected"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:text="家长手动选择 送 或 接"
+                    android:textColor="@color/black"
+                    android:textSize="23sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/setting_iv_autoTime"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_marginRight="20dp"
+                    android:src="@drawable/selector_setting_selected"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:text="通过设置时间自动判断"
+                    android:textColor="@color/black"
+                    android:textSize="23sp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="307dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="34dp">
+
+
+            <com.lantouzi.wheelview.WheelView
+                android:id="@+id/setting_wv_diver"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:textSize="18sp"
+                app:lwvHighlightColor="#F5961D"
+                app:lwvMarkColor="#EEEEEE"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="到校"
+                android:textColor="@color/black"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="离校"
+                android:textColor="@color/black"
+                android:textSize="15sp"/>
+        </RelativeLayout>
+
+
+        <Button
+            android:id="@+id/setting_btn_ensure"
+            android:layout_width="230dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="50.1dp"
+            android:background="@drawable/setting_ensure"
+            android:text="确认"
+            android:textColor="@color/white"
+            android:textSize="20sp"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <ImageView
+        android:layout_width="460dp"
+        android:layout_height="83dp"
+        android:layout_marginTop="77dp"
+        android:src="@drawable/main_log_hello_baby"
+        android:id="@+id/imageView" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+</LinearLayout>

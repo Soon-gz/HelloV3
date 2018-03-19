@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_baby_card"
+    android:background="@color/normal_background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.abings.baby.ui.babyCard.BabyCardActivity">
+
+    <FrameLayout
+        android:id="@+id/babycard_list_fm"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/babycard_list_rv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </android.support.v7.widget.RecyclerView>
+        <TextView
+            android:gravity="center"
+            android:text="您还没有添加接送卡"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </FrameLayout>
+
+
+    <Button
+        android:id="@+id/babycard_add_btn"
+        style="@style/babycardbtn"
+        android:text="@string/addbtnhint"
+        android:layout_gravity="center_horizontal"
+        />
+</LinearLayout>

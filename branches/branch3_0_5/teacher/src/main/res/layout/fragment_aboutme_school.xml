@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:myview="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/normal_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/aboutmeSchool_tv_schoolName"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/textview_height"
+            android:layout_marginTop="1dp"
+            android:background="@color/normal_textview"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/textview_start"
+            android:paddingRight="@dimen/textview_start"
+            android:hint="幼儿园名称"
+            android:textColor="@color/et_text_color"
+            android:textSize="@dimen/textview_text_size" />
+
+        <TextView
+            android:id="@+id/aboutmeSchool_tv_schoolAddr"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/textview_height"
+            android:layout_marginTop="1dp"
+            android:background="@color/normal_textview"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/textview_start"
+            android:paddingRight="@dimen/textview_start"
+            android:hint="幼儿园地址"
+            android:textColor="@color/et_text_color"
+            android:textSize="@dimen/textview_text_size" />
+
+
+        <TextView
+            android:id="@+id/aboutmeSchool_tv_schoolPhone"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/textview_height"
+            android:layout_marginTop="1dp"
+            android:background="@color/normal_textview"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/textview_start"
+            android:paddingRight="@dimen/textview_start"
+            android:hint="幼儿园电话"
+            android:textColor="@color/et_text_color"
+            android:textSize="@dimen/textview_text_size" />
+
+        <com.hellobaby.library.widget.TextViewPlus
+            android:id="@+id/aboutmeSchool_tv_classs"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/textview_height"
+            android:layout_marginTop="1dp"
+            android:background="@color/normal_textview"
+            android:drawableRight="@drawable/et_openicon"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/textview_start"
+            android:paddingRight="@dimen/textview_start"
+            android:text="班级"
+            android:textColor="@color/et_text_color"
+            android:textSize="@dimen/textview_text_size"
+            myview:right_height="10dp"
+            myview:right_width="15dp" />
+        <ListView
+            android:id="@+id/aboutmeSchool_lv_class"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:background="@color/normal_textview"
+            android:gravity="center_vertical"
+            android:visibility="gone"/>
+    </LinearLayout>
+</RelativeLayout>

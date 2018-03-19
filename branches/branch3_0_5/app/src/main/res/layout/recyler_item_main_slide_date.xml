@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/libMainBottomBgColor"
+    android:gravity="center_vertical">
+
+    <TextView
+        android:id="@+id/mainSlideDateItem_tv_year"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="5dp"
+        android:paddingTop="5sp"
+        android:text="2016"
+        android:textColor="@color/white"
+        android:textSize="15sp"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/mainSlideDateItem_rv_month"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

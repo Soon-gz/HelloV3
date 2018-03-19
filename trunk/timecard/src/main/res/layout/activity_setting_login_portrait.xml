@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_setting_login_portrait"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_kaoqin_bg"
+    tools:context="com.hellobaby.timecard.uiPortrait.SettingLoginActivity_portrait">
+
+    <include layout="@layout/main_top_layout"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="551dp"
+            android:layout_height="81dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/setting_login_et">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:src="@drawable/login_user"/>
+
+            <EditText
+                android:id="@+id/settingLogin_et_userName"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:background="@null"
+                android:gravity="center"
+                android:hint="用户名"
+                android:textSize="22sp"
+                android:text="admin"
+                android:textColor="@color/black"
+                android:textColorHint="@color/white"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="551dp"
+            android:layout_height="81dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/setting_login_et">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:src="@drawable/login_pwd"/>
+
+            <EditText
+                android:id="@+id/settingLogin_et_pwd"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:background="@null"
+                android:gravity="center"
+                android:textSize="22sp"
+                android:hint="密码"
+                android:inputType="numberPassword"
+                android:textColor="@color/black"
+                android:textColorHint="@color/white"/>
+        </RelativeLayout>
+
+
+        <Button
+            android:id="@+id/settingLogin_btn_login"
+            android:layout_width="584dp"
+            android:layout_height="102dp"
+            android:layout_marginTop="60dp"
+            android:background="@drawable/setting_login_btn"
+            android:text="登入"
+            android:textColor="@color/white"
+            android:textSize="24sp"/>
+    </LinearLayout>
+</RelativeLayout>

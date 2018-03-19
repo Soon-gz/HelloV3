@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+<com.github.mikephil.charting.charts.LineChart
+    android:id="@+id/lineChart"
+    android:layout_marginTop="120dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="8dp">
+
+</com.github.mikephil.charting.charts.LineChart>
+
+    <LinearLayout
+        android:id="@+id/linechar_ll_history"
+        android:layout_marginTop="29dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="20dp">
+    <TextView
+        android:id="@+id/linechar_tv1"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:gravity="center|left"
+        android:textColor="@color/black"
+        android:text="3.3kg"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:id="@+id/linechar_tv2"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:gravity="center|left"
+        android:textColor="@color/black"
+        android:text="(出生)"
+        />
+    <TextView
+        android:id="@+id/linechar_tv3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center|left"
+        android:text="2016年9月1日"
+        />
+    </LinearLayout>
+</RelativeLayout>
+

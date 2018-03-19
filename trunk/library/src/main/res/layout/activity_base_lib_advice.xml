@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:id="@+id/activity_base_lib_advice"
+    android:layout_width="match_parent"
+    android:background="@color/normal_background"
+    android:layout_height="match_parent"
+    tools:context="com.hellobaby.library.ui.aboutapp.BaseLibAdviceActivity">
+
+    <EditText
+        android:id="@+id/lib_about_advice_edt"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:padding="10dp"
+        android:maxLength="250"
+        android:textSize="@dimen/common_size"
+        android:hint="@string/advice_hint"
+        android:background="@color/white"
+        android:gravity="start"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:background="@color/white"
+        android:layout_marginTop="1dp"
+        android:layout_height="40dp">
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="@dimen/common_size"
+            android:text="@string/advice_email"/>
+        <EditText
+            android:id="@+id/lib_about_advice_email_edt"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:inputType="text"
+            android:paddingLeft="10dp"
+            android:background="@color/white"
+            android:maxLength="30"
+            android:textSize="@dimen/common_size"
+            android:hint="@string/advice_email_hint"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:background="@color/white"
+        android:layout_marginTop="1dp"
+        android:layout_height="40dp">
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="@dimen/common_size"
+            android:text="@string/advice_Phone"/>
+        <EditText
+            android:id="@+id/lib_about_advice_phone_edt"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:inputType="number"
+            android:maxLength="11"
+            android:textSize="@dimen/common_size"
+            android:hint="@string/advice_Phone_hint"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+</LinearLayout>

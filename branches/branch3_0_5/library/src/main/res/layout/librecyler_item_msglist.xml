@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:myview="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/libMsgList_rl_root"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/libMsgList_civ_icon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/msgbox_icon_unread"/>
+        <TextView
+            android:id="@+id/libMsgList_tv_icon"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/bg_circle"
+            android:gravity="center"
+            android:text="10/50"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            android:visibility="gone"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/libMsgList_tv_person"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/title_size"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/libMsgList_tv_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="@dimen/common_size"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/libMsgList_tv_subject"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:maxLines="1"
+                android:text="开学通知"
+                android:textColor="@color/black"
+                android:textSize="@dimen/common_size"/>
+
+            <TextView
+                android:id="@+id/libMsgList_tv_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:paddingRight="5dp"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="@dimen/common_size"/>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <View
+        style="@style/libCommon_divider_line"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>

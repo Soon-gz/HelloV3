@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tl="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/fragmentAboutMe_rl_root"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/normal_background"
+                android:orientation="vertical">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/mefragment_civ_schoolHead"
+        android:layout_width="@dimen/head_max_height"
+        android:layout_height="@dimen/head_max_height"
+        android:layout_gravity="center_vertical"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/main_normaluser_icon"/>
+
+    <com.flyco.tablayout.CommonTabLayout
+        android:id="@+id/tab_Fragment_title"
+        tl:tl_textUnselectColor="#999999"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/linearLayout"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="@dimen/textview_start"
+        android:layout_marginRight="@dimen/textview_start"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/corners_bg"
+        android:paddingLeft="1dp"
+        android:paddingRight="1dp"
+        tl:tl_iconVisible="false"
+        tl:tl_indicator_anim_enable="true"
+        tl:tl_indicator_color="#FFFFFF"
+        tl:tl_indicator_corner_radius="6dp"
+        tl:tl_indicator_margin_bottom="1dp"
+        tl:tl_indicator_margin_left="0dp"
+        tl:tl_indicator_margin_right="0dp"
+        tl:tl_indicator_margin_top="1dp"
+        tl:tl_indicator_style="BLOCK"
+        tl:tl_textSelectColor="#000000"
+        tl:tl_textsize="@dimen/common_size"/>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_below="@+id/mefragment_tv_schoolName"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/mefragment_civ_schoolHead"
+        android:layout_marginLeft="5dp"
+        android:gravity="center_vertical|left">
+
+        <ImageView
+            android:id="@+id/aboutme_im_event"
+            android:padding="4dp"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/icon_event"/>
+
+        <ImageView
+            android:id="@+id/aboutme_im_favorite"
+            android:padding="4dp"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/yellowstarbookicon"/>
+
+        <ImageView
+            android:padding="4dp"
+            android:id="@+id/aboutme_im_contact"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/contentpersonicon"/>
+
+        <ImageView
+            android:padding="4dp"
+            android:id="@+id/aboutme_im_alert"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/alerticon"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/mefragment_tv_schoolName"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:gravity="center"
+        android:textSize="15sp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"
+        android:layout_alignTop="@+id/mefragment_civ_schoolHead"
+        android:layout_toRightOf="@+id/mefragment_civ_schoolHead"
+        android:layout_marginLeft="15dp"
+        android:singleLine="true"/>
+
+    <android.support.v4.view.ViewPager
+        android:layout_below="@+id/tab_Fragment_title"
+        android:id="@+id/mefragment_vp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>

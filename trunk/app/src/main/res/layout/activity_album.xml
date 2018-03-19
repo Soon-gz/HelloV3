@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:myview="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/album_swipeRefresh"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/album_ll_show"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="5dp"
+                android:paddingLeft="@dimen/screen_content_lr_space"
+                android:paddingRight="@dimen/screen_content_lr_space">
+
+
+                <TextView
+                    android:id="@+id/album_tv_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:enabled="false"
+                    android:paddingLeft="2dp"
+                    android:layout_marginTop="12dp"
+                    android:textColor="#FF000000"
+                    android:textSize="16sp"/>
+
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/album_recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:overScrollMode="never"
+                android:paddingLeft="@dimen/screen_content_lr_space"
+                android:paddingRight="@dimen/screen_content_lr_space"
+                android:scrollbars="vertical"/>
+        </LinearLayout>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <LinearLayout
+        android:id="@+id/album_ll_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:background="#FF000000"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/album_iv_edit"
+            style="@style/mainBottomMenu"
+            android:src="@drawable/album_add"/>
+    </LinearLayout>
+
+    <include layout="@layout/lib_bottom_time_user"/>
+</LinearLayout>

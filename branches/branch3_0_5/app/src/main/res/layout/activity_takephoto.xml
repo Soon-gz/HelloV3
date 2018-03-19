@@ -1,0 +1,152 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+
+    <RelativeLayout
+        android:id="@+id/titleBase_RL"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#333333">
+
+        <TextView
+            android:id="@+id/titleBase_tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/titleBase_iv_right"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/btn_right_whitearrow" />
+
+        <ImageView
+            android:id="@+id/titleBase_iv_left"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@color/transparent"
+            android:paddingLeft="20dp"
+            android:paddingRight="10dp"
+            android:src="@drawable/title_left_arrow_white"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/camera_preview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/titleBase_RL">
+    </FrameLayout>
+    >
+
+    <ImageView
+        android:id="@+id/takephoto_btn_flus1"
+        android:layout_width="@dimen/photo_icon_size"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titleBase_RL"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/takephoto_flashopenicon" />
+
+    <ImageView
+        android:id="@+id/takephoto_btn_flus2"
+        android:layout_width="@dimen/photo_icon_size"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titleBase_RL"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/takephoto_btn_flus1"
+        android:src="@drawable/takephoto_flashcloseicon" />
+
+    <ImageView
+        android:id="@+id/takephoto_btn_flus3"
+        android:layout_width="@dimen/photo_icon_size"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titleBase_RL"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/takephoto_btn_flus2"
+        android:src="@drawable/takephoto_flashautoicon" />
+
+    <ImageView
+        android:layout_width="@dimen/photo_icon_size"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/titleBase_RL"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/smallcamera" />
+
+    <ImageView
+        android:id="@+id/button_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="15dp"
+        android:layout_marginRight="40dp"
+        android:src="@drawable/takephoto_switch_icon" />
+
+    <ImageView
+        android:id="@+id/button_capture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="2dp"
+        android:src="@drawable/takephoto_takeicon" />
+
+    <TextView
+        android:id="@+id/count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/titleBase_RL"
+        android:layout_gravity="center"
+        android:layout_marginRight="35dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/white"
+        android:text="9"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <!--<Button-->
+    <!--android:id="@+id/button_switch"-->
+    <!--android:layout_width="fill_parent"-->
+    <!--android:layout_height="fill_parent"-->
+    <!--android:text="换头"-->
+    <!--android:layout_gravity="center"-->
+    <!--android:layout_weight="2"/>-->
+
+    <!--<Button-->
+    <!--android:id="@+id/button_capture"-->
+    <!--android:text="拍照"-->
+    <!--android:layout_width="fill_parent"-->
+    <!--android:layout_height="fill_parent"-->
+    <!--android:layout_gravity="center"-->
+    <!--android:layout_weight="2"-->
+    <!--/>-->
+    <!--<Button-->
+    <!--android:id="@+id/button_flash"-->
+    <!--android:text="闪光灯"-->
+    <!--android:layout_width="fill_parent"-->
+    <!--android:layout_height="fill_parent"-->
+    <!--android:layout_weight="2"/>-->
+    <!--<Button-->
+    <!--android:id="@+id/button_finsh"-->
+    <!--android:text="下一步"-->
+    <!--android:layout_width="fill_parent"-->
+    <!--android:layout_height="fill_parent"-->
+    <!--android:layout_gravity="center"-->
+    <!--android:layout_weight="2"-->
+    <!--/>-->
+</RelativeLayout>

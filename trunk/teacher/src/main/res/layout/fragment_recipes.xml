@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="19dp"
+        android:orientation="vertical"
+        android:paddingBottom="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/recipesItem_iv_head"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/main_babynormal_icon"/>
+
+            <TextView
+                android:id="@+id/recipesItem_tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:maxLines="2"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/title_size"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/recipesItem_tv_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="45dp"
+            android:lineSpacingExtra="2dp"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/common_size"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/from_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="45dp"
+                android:layout_marginRight="10dp"
+                android:maxLines="1"
+                android:text="来自于智塾幼儿园"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="@dimen/common_size"/>
+
+            <TextView
+                android:id="@+id/publish_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:text="2016年12月21日 12:39"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="@dimen/common_size"/>
+
+            <ImageView
+                android:id="@+id/recipesItem_iv_tag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/line"
+        style="@style/libCommon_divider_line"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>

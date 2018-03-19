@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:myview="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <com.hellobaby.library.widget.CheckBoxPlus
+        android:id="@+id/listViewItem_cbp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/textview_height"
+        android:layout_marginTop="1dp"
+        android:background="@color/normal_textview"
+        android:button="@null"
+        android:textSize="@dimen/textview_text_size"
+        android:drawableRight="@drawable/selector_title_right_tick"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/screen_content_lr_space"
+        android:paddingRight="@dimen/screen_content_lr_space"
+        android:textColor="@color/et_text_color"
+        myview:right_height="@dimen/textview_icon_size"
+        myview:right_width="20dp"/>
+</LinearLayout>

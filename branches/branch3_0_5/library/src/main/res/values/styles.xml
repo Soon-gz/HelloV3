@@ -1,0 +1,73 @@
+<resources>
+
+    <style name="LibFullscreenTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:fitsSystemWindows">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="mainBottomMenu">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:scaleType">centerInside</item>
+        <item name="android:paddingTop">12dp</item>
+        <item name="android:paddingBottom">12dp</item>
+    </style>
+
+
+    <!-- 设置ActionBar菜单字体 -->
+    <style name="ActionMenuTextStyle" parent="TextAppearance.AppCompat.Widget.ActionBar.Menu">
+        <item name="android:textSize">@dimen/action_text_size</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="PhotoPickerTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/photopicker_background</item>
+        <item name="actionMenuTextAppearance">@style/ActionMenuTextStyle</item>
+        <!--<item name="actionBarTheme">@style/actionBarTheme</item>-->
+        <!--<item name="actionBarPopupTheme">@style/actionBarPopupTheme</item>-->
+    </style>
+
+    <style name="libCommon_divider_line">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">@color/normal_background</item>
+    </style>
+
+    <style name="lib_register_editText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColorHint">@color/etHintColor</item>
+        <item name="android:background">@drawable/et_bg_default</item>
+    </style>
+    <style name="lib_changepwd_editText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColorHint">@color/gray6c</item>
+        <item name="android:background">@color/white</item>
+    </style>
+
+    <style name="lib_star_percent">
+        <item name="android:layout_width">51.5dp</item>
+        <item name="android:layout_height">51.5dp</item>
+    </style>
+
+    <style name="lib_schoolTitleTv">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/selector_school_title_color</item>
+    </style>
+</resources>

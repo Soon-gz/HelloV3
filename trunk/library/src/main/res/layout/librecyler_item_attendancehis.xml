@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:myview="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/eventlist_rl_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:divider="@color/libTitleBg"
+    android:orientation="vertical"
+    android:showDividers="end">
+
+    <LinearLayout
+        android:id="@+id/eventlist_ll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/timecard_time"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="2017-06-03(周五)"
+            android:textColor="@color/black"
+            android:background="#F6F7F7"
+            android:padding="@dimen/title_padding"
+            android:gravity="center_vertical"
+            />
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/his_rv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </android.support.v7.widget.RecyclerView>
+    </LinearLayout>
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:paddingLeft="40dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/hisdetail_jia"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:visibility="gone"
+        android:src="@drawable/jia" />
+</RelativeLayout>

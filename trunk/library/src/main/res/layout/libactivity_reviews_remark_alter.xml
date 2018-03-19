@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white">
+    <LinearLayout
+        android:id="@+id/remark_ll_root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/reviewsReMarkAlert_civ_head"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="10dp"/>
+
+            <TextView
+                android:id="@+id/reviewsReMarkAlert_tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/reviewsReMarkAlert_civ_head"
+                android:text="姓名"
+                android:textColor="@color/black"
+                android:textSize="@dimen/title_size"/>
+
+            <ViewStub
+                android:id="@+id/reviewsReMarkAlert_viewStub"
+                style="@style/lib_star_percent"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:layout="@layout/libinclude_star_percent"/>
+
+            <View
+                style="@style/libCommon_divider_line"
+                android:layout_alignParentBottom="true"/>
+        </RelativeLayout>
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/reviewsReMarkAlert_rv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="15dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:paddingRight="40dp"
+            android:paddingLeft="40dp">
+
+            <TextView
+                android:id="@+id/tv_remark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="评语:"
+                android:textColor="@color/black"
+                android:textSize="@dimen/title_size"/>
+
+
+            <EditText
+                android:id="@+id/reviewsReMarkAlert_et_remark"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:minHeight="40dp"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="24dp"
+                android:paddingRight="24dp"
+                android:background="@color/white"
+                android:gravity="top"
+                android:text=""
+                android:maxLength="100"
+                android:textSize="@dimen/title_size"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/reviewsReMarkAlert_tv_createTime"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/libTitleBg"
+        android:gravity="center"
+        android:textColor="#666666"
+        android:textSize="@dimen/common_size"
+        android:maxLength="100"
+        android:visibility="gone"/>
+</RelativeLayout>

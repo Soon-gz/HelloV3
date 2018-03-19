@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:id="@+id/activity_prize_history"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/normal_background"
+    xmlns:tl="http://schemas.android.com/apk/res-auto"
+    tools:context="com.abings.baby.teacher.ui.PrizeDraw.history.PrizeHistoryActivity">
+
+
+
+    <RelativeLayout
+        android:id="@+id/prize_rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@color/libTitleBg">
+
+        <ImageView
+            android:id="@+id/prize_iv_left"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:background="@color/transparent"
+            android:paddingBottom="@dimen/title_bottom_top_padding"
+            android:paddingLeft="@dimen/screen_content_lr_space"
+            android:paddingRight="@dimen/screen_content_lr_space"
+            android:paddingTop="@dimen/title_bottom_top_padding"
+            android:src="@drawable/title_left_arrow"/>
+
+        <com.flyco.tablayout.CommonTabLayout
+            tl:tl_textUnselectColor="#999999"
+            android:id="@+id/prize_iv_center"
+            android:layout_centerInParent="true"
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/corners_bg"
+            android:paddingLeft="1dp"
+            android:paddingRight="1dp"
+            tl:tl_iconVisible="false"
+            tl:tl_indicator_anim_enable="true"
+            tl:tl_indicator_color="#FFFFFF"
+            tl:tl_indicator_corner_radius="6dp"
+            tl:tl_indicator_margin_bottom="1dp"
+            tl:tl_indicator_margin_left="0dp"
+            tl:tl_indicator_margin_right="0dp"
+            tl:tl_indicator_margin_top="1dp"
+            tl:tl_indicator_style="BLOCK"
+            tl:tl_textSelectColor="#000000"
+            tl:tl_textsize="@dimen/common_size"/>
+
+
+    </RelativeLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/prize_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:background="@color/white"
+        android:layout_marginTop="5dp"/>
+</LinearLayout>

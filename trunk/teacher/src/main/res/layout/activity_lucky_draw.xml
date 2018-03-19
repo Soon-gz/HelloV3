@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_lucky_draw"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.abings.baby.teacher.ui.PrizeDraw.LuckyDrawActivity">
+
+    <ScrollView
+        android:id="@+id/prize_scroll_view"
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="40dp">
+                <TextView
+                    android:id="@+id/text_score_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_gravity="center_vertical"
+                    android:text="0"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/star"/>
+            </LinearLayout>
+            <!--抽奖轮盘-->
+            <RelativeLayout
+                android:id="@+id/lucky_pan"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/dropkick">
+                <ImageView
+                    android:id="@+id/lucky_start"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="93.5dp"
+                    android:paddingBottom="90dp"
+                    android:paddingLeft="90dp"
+                    android:paddingRight="90dp"
+                    android:src="@drawable/start1"
+                    android:layout_centerInParent="true"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <Button
+                    android:id="@+id/rule_btn"
+                    android:layout_width="50dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="40dp"
+                    android:background="@drawable/btn_bg_del_copy"
+                    android:textColor="@color/white"
+                    android:textSize="10sp"
+                    android:text="规则"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/start_btn"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/btn_bg_del"
+                android:layout_width="250dp"
+                android:layout_height="30dp">
+                <LinearLayout
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="13sp"
+                        android:textColor="#fff"
+                        android:text="抽奖 ( 100 " />
+                    <ImageView
+                        android:layout_width="14dp"
+                        android:layout_height="14dp"
+                        android:src="@drawable/star"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="13sp"
+                        android:textColor="#fff"
+                        android:text=" )"/>
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:background="@color/normal_background"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/colorWeight"
+                android:text="兑换区"/>
+
+            <com.abings.baby.teacher.ui.PrizeDraw.FullGridView
+                android:id="@+id/prizeGridView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:numColumns="2"
+                android:layout_marginTop="10dp"
+                android:horizontalSpacing="10dp"
+                android:verticalSpacing="10dp"
+                >
+
+            </com.abings.baby.teacher.ui.PrizeDraw.FullGridView>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

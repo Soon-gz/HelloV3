@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/createBaby_iv_head"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/main_babynormal_icon"/>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2.7">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp">
+
+            <EditText
+                android:id="@+id/createBaby_et_name"
+                style="@style/createBaby_editText"
+                android:layout_width="match_parent"
+                android:maxLength="16"
+                android:hint="姓名"/>
+
+            <EditText
+                android:id="@+id/createBaby_et_gender"
+                style="@style/createBaby_editText"
+                android:layout_width="match_parent"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:hint="性别"/>
+
+            <EditText
+                android:id="@+id/createBaby_et_birthday"
+                style="@style/createBaby_editText"
+                android:layout_width="match_parent"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:hint="生日"/>
+
+            <EditText
+                android:id="@+id/createBaby_et_native"
+                style="@style/createBaby_editText"
+                android:layout_width="match_parent"
+                android:maxLength="50"
+                android:hint="出生地"/>
+
+            <EditText
+                android:id="@+id/createBaby_et_school"
+                style="@style/createBaby_editText"
+                android:layout_width="match_parent"
+                android:maxLength="50"
+                android:hint="幼儿园"/>
+
+            <Button
+                android:id="@+id/createBaby_btn_complete"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/btn_bg_default"
+                android:text="完成"
+                android:visibility="gone"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

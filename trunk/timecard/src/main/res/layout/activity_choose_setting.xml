@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_choose_setting"
+    android:layout_width="match_parent"
+    android:background="@drawable/main_bg"
+    android:layout_height="match_parent"
+    tools:context="com.hellobaby.timecard.ui.setting.ChooseSettingActivity">
+
+    <ImageView
+        android:layout_width="460dp"
+        android:layout_height="83dp"
+        android:layout_marginBottom="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/main_log_hello_baby"
+        android:id="@+id/imageView" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_centerVertical="true">
+        <TextView
+            android:id="@+id/teacher_setting"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="教师考勤设置"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:background="@drawable/card_bg"
+            android:layout_height="300dp" />
+        <TextView
+            android:id="@+id/baby_setting"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="宝宝考勤设置"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:background="@drawable/card_bg"
+            android:layout_height="300dp" />
+    </LinearLayout>
+</RelativeLayout>

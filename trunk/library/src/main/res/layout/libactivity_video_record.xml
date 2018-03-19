@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/video_record_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_dark">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+            <!--<com.hellobaby.library.ui.publish.video.VideoProgressView-->
+                <!--android:id="@+id/libVideoRecorder_progress"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="5dp"/>-->
+
+            <FrameLayout
+                android:id="@+id/libVideoRecorder_fl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"/>
+        </RelativeLayout>
+
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/libTitle_RL_record"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:visibility="visible"
+        android:background="#00000000">
+
+        <ImageView
+            android:id="@+id/libPlayVideo_tv_cancel_record"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:background="@color/transparent"
+            android:paddingBottom="15dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="15dp"
+            android:src="@drawable/title_left_arrow_white"/>
+        <ImageView
+            android:id="@+id/btn_change"
+            android:layout_width="45dp"
+            android:layout_height="40dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/change_camera"/>
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="40dp"
+        android:orientation="vertical">
+
+        <!--<TextView-->
+            <!--android:id="@+id/libVideoRecorder_tv_tips"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginBottom="8dp"-->
+            <!--android:layout_gravity="center_horizontal"-->
+            <!--android:background="@android:color/transparent"-->
+            <!--android:padding="2dp"-->
+            <!--android:text="松开取消"-->
+            <!--android:textColor="@color/video_green"-->
+            <!--android:textSize="18sp"-->
+            <!--android:visibility="invisible"/>-->
+
+        <RelativeLayout
+            android:layout_width="130dp"
+            android:layout_height="130dp">
+            <Button
+                android:id="@+id/libVideoRecorder_btn_start"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:background="@drawable/libvideo_recorder_default"
+                android:focusable="true"
+                android:text="按住拍"
+                android:layout_centerInParent="true"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"/>
+            <RelativeLayout
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <com.hellobaby.library.ui.publish.video.ProgressBarView
+                    android:id="@+id/libVideoRecorder_progress"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    app:circlesColor="#00000000"
+                    android:visibility="gone"
+                    app:currentProgressColor="#F6B42D"
+                    app:currentScheduleWidth="9dp"
+                    app:circlesWidth="12dp"
+                    />
+                <TextView
+                    android:id="@+id/lib_center_circle"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:visibility="gone"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/libvideo_recorder_gray"
+                    />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

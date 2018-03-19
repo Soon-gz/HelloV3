@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/itemReviewsMark_ll_root"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/itemReviewsMark_civ_head"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="17dp"
+        android:src="@drawable/head_holder"/>
+
+    <TextView
+        android:id="@+id/itemReviewsMark_tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/itemReviewsMark_civ_head"
+        android:text="姓名"
+        android:textColor="@color/black"
+        android:textSize="14sp"/>
+
+
+    <ImageView
+        android:id="@+id/itemReviewsMark_iv_one"
+        android:layout_width="24dp"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="20dp"
+        android:layout_toLeftOf="@+id/itemReviewsMark_iv_two"
+        android:src="@drawable/selector_mark_star"/>
+
+    <ImageView
+        android:id="@+id/itemReviewsMark_iv_two"
+        android:layout_width="24dp"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="20dp"
+        android:layout_toLeftOf="@+id/itemReviewsMark_iv_three"
+        android:src="@drawable/selector_mark_star"/>
+
+    <ImageView
+        android:id="@+id/itemReviewsMark_iv_three"
+        android:layout_width="24dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="12dp"
+        android:src="@drawable/selector_mark_star"/>
+
+<View style="@style/common_divider_line"
+    android:layout_alignParentBottom="true"/>
+</RelativeLayout>

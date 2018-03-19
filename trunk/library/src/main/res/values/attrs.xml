@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CropImageLayout">
+        <attr name="mHorizontalPadding" format="dimension" />
+    </declare-styleable>
+    <declare-styleable name="TextViewPlus">
+        <attr name="left_height" format="dimension" />
+        <attr name="left_width" format="dimension" />
+        <attr name="right_height" format="dimension" />
+        <attr name="right_width" format="dimension" />
+        <attr name="top_height" format="dimension" />
+        <attr name="top_width" format="dimension" />
+        <attr name="bottom_height" format="dimension" />
+        <attr name="bottom_width" format="dimension" />
+    </declare-styleable>
+    <bool name="is_rtl">false</bool>
+    <declare-styleable name="CityPickerView">
+        <attr name="citypicker_title_background" format="color"></attr><!--标题背景颜色-->
+        <attr name="citypicker_text_confirm_color" format="color"></attr><!--确认文字的颜色-->
+        <attr name="citypicker_text_cancel_color" format="color"></attr><!--取消文字的颜色-->
+        <attr name="citypicker_wheel_color" format="color"></attr><!--滚轮的颜色-->
+        <attr name="citypicker_wheel_text_color" format="color"></attr><!--滚轮里面内容的文字颜色-->
+        <attr name="citypicker_wheel_text_size" format="dimension"></attr><!--滚轮里面内容的文字大小-->
+        <attr name="citypicker_title_text_size" format="dimension"></attr><!--标题的文字大小-->
+        <attr name="citypicker_title_action_size" format="dimension"></attr><!--确认和取消的文字大小-->
+    </declare-styleable>
+    <declare-styleable name="BGASwipeItemLayout">
+        <attr name="bga_sil_swipeDirection" format="enum">
+            <enum name="left" value="0"/>
+            <enum name="right" value="1"/>
+        </attr>
+        <attr name="bga_sil_bottomMode" format="enum">
+            <enum name="pullOut" value="0"/>
+            <enum name="layDown" value="1"/>
+        </attr>
+        <attr name="bga_sil_springDistance" format="dimension"/>
+        <attr name="bga_sil_swipeAble" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="CirclesProgressBar">
+
+        <attr name="circlesWidth" format="dimension" />
+        <attr name="circlesColor" format="color" />
+        <attr name="textCrude" format="dimension" />
+        <attr name="textColor" format="color" />
+        <attr name="textSize" format="dimension" />
+        <attr name="currentProgressColor" format="color" />
+        <attr name="currentProgress" format="integer" />
+        <attr name="isPercent" format="boolean" />
+        <attr name="style" format="integer" />
+        <attr name="currentScheduleWidth" format="dimension" />
+    </declare-styleable>
+</resources>

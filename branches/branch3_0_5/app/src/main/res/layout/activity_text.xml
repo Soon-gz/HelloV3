@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F76969"
+    android:orientation="vertical">
+        <ScrollView
+            android:id="@+id/textactivity_sv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#F76969"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+            <TextView
+                android:layout_marginTop="15dp"
+                android:id="@+id/libTitle_tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/title_title_size"
+                android:lines="1"
+                android:maxLength="13"
+                android:text="标题"/>
+        <TextView
+            android:id="@+id/input_text"
+            android:paddingLeft="10dp"
+            android:paddingRight="@dimen/textview_start"
+            android:layout_below="@+id/input_title_text_line"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:textSize="18sp"
+            android:gravity="top"
+            android:layout_marginBottom="15dp"
+            android:textColor="@color/white"
+            android:background="@null"
+            android:textColorHint="#66ffffff"
+            android:paddingStart="@dimen/screen_content_lr_space"
+            android:maxLength="140" />
+            </LinearLayout>
+        </ScrollView>
+    <RelativeLayout
+        android:id="@+id/libTitle_RL"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <ImageView
+            android:id="@+id/libTitle_iv_left"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:background="@color/transparent"
+            android:paddingBottom="@dimen/title_bottom_top_padding"
+            android:paddingLeft="@dimen/screen_content_lr_space"
+            android:paddingRight="10dp"
+            android:paddingTop="@dimen/title_bottom_top_padding"
+            android:src="@drawable/title_left_arrow_white"/>
+
+        <ImageView
+            android:id="@+id/libTitle_iv_right"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingBottom="@dimen/title_bottom_top_padding"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="@dimen/title_bottom_top_padding"
+            android:src="@drawable/title_more_white"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+</RelativeLayout>
+
+
+

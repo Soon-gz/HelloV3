@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_marginBottom="1dp"
+    android:layout_height="40dp">
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="6"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/babycard_list_item_name"
+                style="@style/babycardtext"
+                android:layout_width="match_parent"
+                android:text=""
+                android:layout_marginLeft="10dp"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_height="match_parent">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/babycard_list_image"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/head_holder"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1.5"
+            android:gravity="center"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/babycard_list_item_relationship"
+                style="@style/babycardtext"
+                android:text=""
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="2.5"
+            android:gravity="center"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/babycard_list_item_phone"
+                style="@style/babycardtext"
+                android:text=""
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/babycard_list_edit"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:padding="8dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/et_icon"/>
+    </RelativeLayout>
+
+
+</LinearLayout>

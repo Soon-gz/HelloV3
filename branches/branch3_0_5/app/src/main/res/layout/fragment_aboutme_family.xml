@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:myview="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+    <com.hellobaby.library.widget.TextViewPlus
+        android:id="@+id/aboutmeFamily_tv_cancelRel"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/textview_height"
+        android:layout_alignParentBottom="true"
+        android:background="@color/normal_textview"
+        android:drawableRight="@drawable/et_deleteicon"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/textview_start"
+        android:paddingRight="@dimen/textview_start"
+        android:text="取消该关注成员"
+        android:textColor="#ED767B"
+        android:textSize="@dimen/textview_text_size"
+        myview:right_height="17dp"
+        android:visibility="gone"
+        android:layout_marginBottom="@dimen/me_bottom_margin_bottom"
+        myview:right_width="@dimen/textview_icon_size"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/normal_textview"
+            android:paddingLeft="@dimen/textview_start"
+            android:paddingRight="@dimen/textview_start">
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/aboutmeFamily_civ"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/head_holder" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_toEndOf="@+id/aboutmeFamily_civ"
+                android:layout_toRightOf="@+id/aboutmeFamily_civ"
+                android:gravity="right|center_vertical">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/aboutmeFamily_rv_relation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal"
+                    android:scrollbars="none"/>
+
+            </LinearLayout>
+        </RelativeLayout>
+
+        <com.hellobaby.library.widget.TextViewPlus
+            android:id="@+id/aboutmeFamily_tv_name"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/textview_height"
+            android:layout_marginTop="1dp"
+            android:background="@color/normal_textview"
+            android:drawableRight="@drawable/et_icon"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/textview_start"
+            android:paddingRight="@dimen/textview_start"
+            android:hint="请输入姓名"
+            android:textColor="@color/et_text_color"
+            android:textSize="@dimen/textview_text_size"
+            myview:right_height="@dimen/textview_icon_size"
+            myview:right_width="@dimen/textview_icon_size"/>
+
+        <com.hellobaby.library.widget.TextViewPlus
+            android:id="@+id/aboutmeFamily_tv_rel"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/textview_height"
+            android:layout_marginTop="1dp"
+            android:background="@color/normal_textview"
+            android:drawableRight="@drawable/et_icon"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/textview_start"
+            android:paddingRight="@dimen/textview_start"
+            android:hint="请选择关系"
+            android:textColor="@color/et_text_color"
+            android:textSize="@dimen/textview_text_size"
+            myview:right_height="@dimen/textview_icon_size"
+            myview:right_width="@dimen/textview_icon_size"/>
+
+        <com.hellobaby.library.widget.TextViewPlus
+            android:id="@+id/aboutmeFamily_tv_email"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/textview_height"
+            android:layout_marginTop="1dp"
+            android:background="@color/normal_textview"
+            android:drawableRight="@drawable/et_icon"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/textview_start"
+            android:paddingRight="@dimen/textview_start"
+            android:hint="请输入邮箱"
+            android:textColor="@color/et_text_color"
+            android:textSize="@dimen/textview_text_size"
+            myview:right_height="@dimen/textview_icon_size"
+            myview:right_width="@dimen/textview_icon_size"/>
+
+
+        <com.hellobaby.library.widget.TextViewPlus
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/textview_height"
+            android:layout_marginTop="1dp"
+            android:background="@color/normal_textview"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/textview_start"
+            android:paddingRight="@dimen/textview_start"
+            android:text="账号绑定"
+            android:textColor="@color/et_text_color"
+            android:textSize="@dimen/textview_text_size"
+            myview:right_height="@dimen/textview_icon_size"
+            android:visibility="gone"
+            myview:right_width="@dimen/textview_icon_size"/>
+    </LinearLayout>
+</RelativeLayout>

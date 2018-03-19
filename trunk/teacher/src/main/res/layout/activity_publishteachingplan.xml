@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:myview="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F2F2F2"
+    android:orientation="vertical">
+
+    <GridView
+        android:id="@+id/gridView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/screen_content_lr_space"
+        android:paddingRight="@dimen/screen_content_lr_space"
+        android:background="#FFFFFF"
+        />
+
+
+    <com.hellobaby.library.widget.TextViewPlus
+        android:id="@+id/aboutme_tv_class"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/textview_height"
+        android:layout_marginTop="1dp"
+        android:background="@color/normal_textview"
+        android:drawableRight="@drawable/et_openicon"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/screen_content_lr_space"
+        android:paddingRight="@dimen/screen_content_lr_space"
+        android:hint="班级"
+        android:textColor="@color/et_text_color"
+        android:textSize="@dimen/textview_text_size"
+        myview:right_height="10dp"
+        myview:right_width="15dp" />
+
+    <ListView
+        android:id="@+id/aboutme_lv_class"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:background="@color/normal_textview"
+        android:gravity="center_vertical"
+        android:visibility="gone"/>
+
+    <com.hellobaby.library.widget.TextViewPlus
+        android:id="@+id/ptp_tv_date"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/textview_height"
+        android:layout_marginTop="1dp"
+        android:background="@color/normal_textview"
+        android:drawableRight="@drawable/select_date_grey"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/screen_content_lr_space"
+        android:paddingRight="@dimen/screen_content_lr_space"
+        android:textColor="@color/et_text_color"
+        android:textSize="@dimen/textview_text_size"
+        android:hint="请选择时间"
+        myview:right_height="15dp"
+        myview:right_width="15dp" />
+
+
+</LinearLayout>
+
+
+

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:background="@color/white"
+                android:layout_height="70dp">
+
+    <TextView
+        android:id="@+id/reviewsClassItem_className"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="14dp"
+        android:gravity="center_vertical"
+        android:text="班级一"
+        android:textColor="@color/black"
+        android:textSize="18sp"/>
+
+    <View
+        style="@style/common_divider_line"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/measure_weight"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="#CCF76969"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:alpha="1.0"
+            android:layout_width="100dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:src="@drawable/measure_weight"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:text="体重"
+            android:textColor="@color/white"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/measure_tv_weight"
+            android:layout_width="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|end"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/measure_height"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="#CCFBB03B"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="100dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:src="@drawable/measure_height"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:text="身高"
+            android:textColor="@color/white"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/measure_tv_height"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|end"
+            android:layout_marginRight="20dp"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/measure_remark"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="#CCDAE000"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/measure_remarkicon"
+            android:layout_width="100dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:src="@drawable/baby_expression"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:text="宝宝评语"
+            android:textColor="@color/white"
+            android:textSize="18sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/measure_teachingplan"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="#CC8CC63F"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/measure_teachingplanicon"
+            android:layout_width="100dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:src="@drawable/baby_teachingplan"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:text="教学计划"
+            android:textColor="@color/white"
+            android:textSize="18sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/measure_attendance"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="#CC00A89C"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/measure_attendanceicon"
+            android:layout_width="100dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:src="@drawable/kaoqin"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:text="智能考勤"
+            android:textColor="@color/white"
+            android:textSize="18sp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

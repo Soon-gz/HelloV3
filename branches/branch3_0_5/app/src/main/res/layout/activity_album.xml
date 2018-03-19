@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:myview="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/album_swipeRefresh"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/album_ll_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="5dp"
+                android:visibility="gone">
+
+                <EditText
+                    android:id="@+id/album_et_editTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:drawableRight="@drawable/et_icon"
+                    android:paddingLeft="@dimen/screen_content_lr_space"
+                    android:paddingRight="@dimen/screen_content_lr_space"
+                    android:paddingTop="10dp"
+                    android:maxLength="13"
+                    android:lines="1"
+                    android:hint="请输入相册标题"
+                    android:textSize="@dimen/title_title_size"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#FFCBCBCB"/>
+
+                <EditText
+                    android:id="@+id/album_et_editContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:drawableRight="@drawable/et_icon"
+                    android:paddingLeft="@dimen/screen_content_lr_space"
+                    android:paddingRight="@dimen/screen_content_lr_space"
+                    android:paddingTop="10dp"
+                    android:hint="请输入相册描述"
+                    android:textColor="#FF000000"
+                    android:textSize="15sp"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#FFCBCBCB"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/album_ll_show"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="5dp"
+                android:paddingLeft="@dimen/screen_content_lr_space"
+                android:paddingRight="@dimen/screen_content_lr_space">
+
+
+                <TextView
+                    android:id="@+id/album_tv_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:enabled="false"
+                    android:layout_marginTop="12dp"
+                    android:textColor="#FF000000"
+                    android:textSize="16sp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="更新于  "
+                        android:textSize="@dimen/common_size"/>
+
+                    <TextView
+                        android:id="@+id/album_tv_update"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/common_size"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/album_recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:overScrollMode="never"
+                android:paddingLeft="@dimen/screen_content_lr_space"
+                android:paddingRight="@dimen/screen_content_lr_space"
+                android:scrollbars="vertical"/>
+        </LinearLayout>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <LinearLayout
+        android:id="@+id/album_ll_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:background="#FF000000"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/album_iv_edit"
+            style="@style/mainBottomButton"
+            android:src="@drawable/album_add"/>
+    </LinearLayout>
+</LinearLayout>

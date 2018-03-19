@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="110dp">
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:scaleType="centerCrop" />
+
+    <View
+        android:id="@+id/mark"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000" />
+    <TextView
+        android:id="@+id/text"
+        android:textColor="#fff"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:shadowColor="#ee000000"
+        android:shadowRadius="2"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <ImageView
+        android:id="@+id/iv_icon"
+        android:src="@drawable/ppw_picture"
+        android:textColor="#fff"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="45dp"
+        android:shadowColor="#ee000000"
+        android:shadowRadius="2"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:layout_width="40dp"
+        android:layout_height="40dp" />
+
+</FrameLayout>

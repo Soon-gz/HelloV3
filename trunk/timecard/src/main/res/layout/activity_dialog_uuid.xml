@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_dialog_uuid"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.hellobaby.timecard.uiPortrait.DialogUUIDActivity">
+
+    <RelativeLayout
+        android:id="@+id/toastZhishu_ll_root"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:padding="30dp">
+
+        <TextView
+            android:id="@+id/dialog_msg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textSize="30sp"
+            android:textColor="#000"
+            android:layout_marginTop="100dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="请输入从后台管理获取的机器码"/>
+        <EditText
+            android:id="@+id/dialog_input"
+            android:layout_marginTop="50dp"
+            android:layout_below="@+id/dialog_msg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:textSize="30sp"
+            android:focusable="true"
+            />
+        <LinearLayout
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="50dp"
+            android:layout_below="@+id/dialog_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="12dp"
+                android:layout_marginLeft="17dp"
+                android:layout_marginRight="35dp"
+                android:textSize="28sp"
+                android:textColor="#fff"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_bg_del"
+                android:text="确定"
+                android:id="@+id/dialog_sure" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

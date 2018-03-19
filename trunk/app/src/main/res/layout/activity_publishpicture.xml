@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#F2F2F2"
+              android:orientation="vertical">
+
+    <GridView
+        android:id="@+id/publishPicture_gridView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:paddingBottom="5dp"
+        android:paddingLeft="@dimen/screen_content_lr_space"
+        android:paddingRight="@dimen/screen_content_lr_space"
+        android:paddingTop="5dp"/>
+<android.support.v7.widget.RecyclerView
+    android:id="@+id/album_list"
+    android:layout_marginTop="1dp"
+    android:background="@color/normal_background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+</android.support.v7.widget.RecyclerView>
+    <LinearLayout
+        android:id="@+id/publishPicture_ll_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:background="#FFFFFF"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/screen_content_lr_space"
+            android:layout_marginRight="13dp"
+            android:layout_weight="1"
+            android:padding="3dp"
+            android:src="@drawable/album_add"/>
+        <EditText
+            android:id="@+id/publishPicture_et_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="创建新相册"
+            android:maxLength="13"
+            android:lines="1"
+            android:minHeight="35dp"
+            android:paddingRight="@dimen/screen_content_lr_space"
+            android:singleLine="true"
+            android:textSize="@dimen/title_size"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/publishPicture_et_content"
+            android:layout_width="match_parent"
+            android:layout_marginTop="1dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#FFFFFF"
+            android:hint="请输入内容"
+            android:gravity="top"
+            android:minHeight="@dimen/textview_height"
+            android:paddingBottom="5dp"
+            android:paddingLeft="@dimen/screen_content_lr_space"
+            android:paddingRight="@dimen/screen_content_lr_space"
+            android:paddingTop="5dp"
+            android:maxLength="100"
+            android:lines="5"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textview_text_size"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/textview_height"
+        android:layout_marginTop="1dp"
+        android:background="@color/normal_textview"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/screen_content_lr_space"
+        android:paddingRight="@dimen/screen_content_lr_space">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/textview_height"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="是否公开相册"
+            android:textColor="@color/et_text_color"
+            android:textSize="@dimen/textview_text_size"
+            android:id="@+id/textView4" />
+        <com.hellobaby.library.widget.ToggleButton
+            xmlns:myview="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/publish_album_tbtn_public"
+            android:layout_width="40dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="20dp"
+            android:gravity="center_vertical"
+            myview:isDefaultOn="false" />
+    </LinearLayout>
+
+</LinearLayout>
+
+
+

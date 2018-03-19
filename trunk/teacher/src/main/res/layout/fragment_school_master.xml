@@ -1,0 +1,33 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/normal_background"
+    tools:context="com.abings.baby.teacher.ui.attendanceManager.SchoolMasterFragment">
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/school_master_swipeRefresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@color/libTitleBg"
+        android:showDividers="end"
+        android:background="@color/normal_background">
+        <ExpandableListView
+            android:id="@+id/school_master_recyclerView"
+            android:groupIndicator="@null"
+            android:divider="@null"
+            android:childDivider="@null"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </ExpandableListView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+    <TextView
+        android:id="@+id/null_text"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:text="目前没有数据~"/>
+</FrameLayout>

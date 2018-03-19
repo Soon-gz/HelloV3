@@ -1,0 +1,104 @@
+apply plugin: 'com.android.library'
+//apply plugin: 'android-apt'
+apply plugin: 'com.neenbedankt.android-apt'
+
+android {
+    compileSdkVersion 24
+    buildToolsVersion "24.0.2"
+
+    defaultConfig {
+        minSdkVersion  "${zsMinSdkVersion}"
+        targetSdkVersion "${zsTargetSdkVersion}"
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    //Needed because of this https://github.com/square/okio/issues/58
+    lintOptions {
+        warning 'InvalidPackage'
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    final SUPPORT_LIBRARY_VERSION = '24.2.1'
+    //
+    final RETROFIT_VERSION = '2.1.0'
+    //
+    final OKHTTP_VERSION = '3.4.1'
+    //
+    final BUTTERKNIFE_VERSION = '8.4.0'
+    //
+    final DAGGER2_VERSION = '2.7'
+    //
+    compile "com.android.support:support-v4:$SUPPORT_LIBRARY_VERSION"
+    //
+    compile "com.android.support:appcompat-v7:$SUPPORT_LIBRARY_VERSION"
+    //
+    compile "com.android.support:recyclerview-v7:$SUPPORT_LIBRARY_VERSION"
+    //
+    compile "com.android.support:support-annotations:$SUPPORT_LIBRARY_VERSION"
+    //
+    compile "com.android.support:design:$SUPPORT_LIBRARY_VERSION"
+    //
+    compile "com.squareup.retrofit2:retrofit:$RETROFIT_VERSION"
+    //
+    compile "com.squareup.retrofit2:converter-scalars:$RETROFIT_VERSION"
+    //
+    compile "com.squareup.retrofit2:converter-gson:$RETROFIT_VERSION"
+    //
+    compile "com.squareup.retrofit2:adapter-rxjava:$RETROFIT_VERSION"
+    //
+    compile "com.squareup.okhttp3:okhttp:$OKHTTP_VERSION"
+    //
+    compile "com.squareup.okhttp3:logging-interceptor:$OKHTTP_VERSION"
+    //
+    compile "com.jakewharton:butterknife:$BUTTERKNIFE_VERSION"
+    //
+    compile "com.jakewharton:butterknife-compiler:$BUTTERKNIFE_VERSION"
+    //
+    compile "com.google.dagger:dagger:$DAGGER2_VERSION"
+    //
+    apt "com.google.dagger:dagger-compiler:$DAGGER2_VERSION"
+    //
+    testCompile 'junit:junit:4.12'
+    compile 'com.squareup:otto:1.3.8'
+    compile 'io.reactivex:rxjava:1.2.0'
+    compile 'io.reactivex:rxandroid:1.2.1'
+    compile 'com.google.zxing:core:3.3.0'
+    compile 'com.flyco.dialog:FlycoDialog_Lib:1.3.2@aar'
+    compile 'com.flyco.tablayout:FlycoTabLayout_Lib:2.0.8@aar'
+    compile 'com.facebook.rebound:rebound:0.3.+'
+    compile 'de.hdodenhof:circleimageview:2.1.0'
+    compile files('libs/httpmime-4.1.3.jar')
+    compile 'com.android.support:multidex:1.0.1'
+    compile files('libs/SocialSDK_QQZone_3.jar')
+    compile files('libs/SocialSDK_Sina.jar')
+    compile files('libs/SocialSDK_WeiXin_1.jar')
+    compile files('libs/SocialSDK_WeiXin_2.jar')
+    compile files('libs/umeng_social_sdk.jar')
+    compile files('libs/weiboSDKCore_3.1.4.jar')
+    compile files('libs/open_sdk_r5509.jar')
+    compile files('libs/pinyin4j-2.5.0.jar')
+    compile 'com.alibaba:fastjson:1.2.9'
+    //    compile 'com.github.franmontiel:PersistentCookieJar:v1.0.0'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile 'com.github.chrisbanes.photoview:library:1.2.4'
+    compile files('libs/sun.misc.BASE64Decoder.jar')
+    compile files('libs/bcprov-ext-jdk15on-155.jar')
+    //tencent bugly     其中latest.release为当前最新的Bugly SDK版本号,不能更新时，可替换为具体某一个版本
+    compile 'com.tencent.bugly:crashreport:latest.release' //例如2.1.5
+    compile 'com.tencent.bugly:nativecrashreport:latest.release' //例如2.2.0
+}

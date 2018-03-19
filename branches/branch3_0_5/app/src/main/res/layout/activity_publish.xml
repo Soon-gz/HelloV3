@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F76969"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp">
+        <EditText
+            android:id="@+id/publish_et_title"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="35dp"
+            android:paddingLeft="@dimen/screen_content_lr_space"
+            android:paddingRight="@dimen/screen_content_lr_space"
+            android:hint="请输入标题"
+            android:textColorHint="#66ffffff"
+            android:textSize="20sp"
+            android:background="@null"
+            android:textStyle="bold"
+            android:lines="1"
+            android:maxLength="13" />
+        <ImageView
+            android:id="@+id/input_title_text_line"
+            android:layout_below="@+id/publish_et_title"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#66ffffff"/>
+        <EditText
+            android:id="@+id/publish_et_content"
+            android:paddingLeft="@dimen/screen_content_lr_space"
+            android:paddingRight="@dimen/screen_content_lr_space"
+            android:layout_below="@+id/input_title_text_line"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:hint="请输入内容"
+            android:textSize="18sp"
+            android:gravity="top"
+            android:background="@null"
+            android:textColorHint="#66ffffff"
+            android:maxLength="140" />
+    </RelativeLayout>
+</LinearLayout>
+
+
+

@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_prize_adress"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/normal_background"
+    tools:context="com.abings.baby.teacher.ui.PrizeDraw.Adress.PrizeAdressActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:background="@color/white"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="46dp">
+            <TextView
+                android:id="@+id/prize_address_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:layout_centerVertical="true"
+                android:text="奖品名称"/>
+            <LinearLayout
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/prize_address_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="0"/>
+                <ImageView
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:src="@drawable/star"/>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginTop="3dp"
+            android:background="@color/white"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="46dp">
+            <TextView
+                android:id="@+id/prize_address_dingdan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:layout_centerVertical="true"
+                android:text="订单号："/>
+            <TextView
+                android:id="@+id/prize_address_dingdan_number"
+                android:layout_toRightOf="@+id/prize_address_dingdan"
+                android:textColor="@color/black"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="154987544565"/>
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:textColor="@color/black"
+            android:padding="10dp"
+            android:text="联系方式"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:paddingLeft="10dp"
+            android:gravity="center_vertical"
+            android:background="@color/white"
+            android:layout_height="46dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="收货人："/>
+            <EditText
+                android:id="@+id/prize_address_username"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:hint=""
+                android:textSize="15sp"
+                android:background="@null"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="3dp"
+            android:layout_width="match_parent"
+            android:paddingLeft="10dp"
+            android:gravity="center_vertical"
+            android:background="@color/white"
+            android:layout_height="46dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="联系电话："/>
+            <EditText
+                android:id="@+id/prize_address_phonenumber"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:hint=""
+                android:textSize="15sp"
+                android:background="@null"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/prize_address_choose"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:gravity="center_vertical"
+            android:layout_marginTop="3dp"
+            android:layout_height="46dp">
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textColor="@color/black"
+                android:layout_marginLeft="10dp"
+                android:text="所在地区："
+                />
+            <TextView
+                android:id="@+id/prize_address_string"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content"
+                android:text="浙江省 台州市 椒江区"/>
+            <ImageView
+                style="@style/lib_about_app_image"
+                android:src="@drawable/advice_arrow"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="3dp"
+            android:layout_width="match_parent"
+            android:paddingLeft="10dp"
+            android:gravity="center_vertical"
+            android:background="@color/white"
+            android:layout_height="46dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="详细地址："/>
+            <EditText
+                android:id="@+id/prize_address_fulladdress"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:hint="街道、楼牌号等"
+                android:textSize="15sp"
+                android:background="@null"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/prize_address_next_btn"
+        android:layout_width="260dp"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/btn_bg_default"
+        android:text="下一步"/>
+
+
+
+</RelativeLayout>

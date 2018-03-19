@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rv_album_root"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:background="#FFFFFF"
+    android:orientation="horizontal">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/albumlist_im"
+        android:layout_width="70dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/screen_content_lr_space"
+        android:layout_marginRight="13dp"
+        android:layout_weight="1"
+        android:padding="3dp"
+        android:src="@drawable/alubm_add2" />
+
+    <TextView
+        android:id="@+id/rv_album_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@null"
+        android:gravity="center_vertical"
+        android:text="创建新相册"
+        android:textColor="@color/gray6c"
+        android:lines="1"
+        android:maxLength="13"
+        android:minHeight="35dp"
+        android:paddingRight="@dimen/screen_content_lr_space"
+        android:paddingTop="4dp"
+        android:singleLine="true"
+        android:textSize="@dimen/title_size"
+        android:textStyle="bold" />
+</LinearLayout>
+
+
+

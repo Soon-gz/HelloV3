@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/normal_background"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:id="@+id/libTitle_iv_left"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:background="@color/transparent"
+            android:paddingBottom="15dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="10dp"
+            android:paddingTop="15dp"
+            android:src="@drawable/title_left_arrow" />
+
+        <EditText
+            android:id="@+id/searchcontent_et"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"
+            android:layout_weight="1"
+            android:background="@drawable/title_bg_search"
+            android:drawableLeft="@drawable/ic_search_right"
+            android:drawablePadding="5dp"
+            android:gravity="center_vertical"
+            android:hint="搜你想搜的"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:singleLine="true"
+            android:maxLines="1"
+            android:textSize="@dimen/common_size" />
+
+        <TextView
+            android:id="@+id/searchtitle_iv_right"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingBottom="15dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="20dp"
+            android:paddingTop="15dp"
+            android:text="搜索"
+            android:textColor="@color/black" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:alpha="0.1"
+            android:background="@color/status_view" />
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/search_rv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" />
+</LinearLayout>
+
+
+

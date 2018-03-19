@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="wrap_content">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_marginTop="5dp"
+        android:id="@+id/person_big_head_img"
+        android:layout_width="@dimen/head_normal_height"
+        android:layout_height="@dimen/head_normal_height"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/head_holder"
+        />
+    <TextView
+        android:id="@+id/person_userName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="@dimen/action_text_size"
+        android:layout_gravity="center_horizontal"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:text="何大桑"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/care_person"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:padding="10dp"
+                android:text="100 关注"/>
+            <TextView
+                android:id="@+id/likes_person"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:padding="10dp"
+                android:text="100 粉丝"/>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/care_add_delete"
+            android:layout_width="80dp"
+            android:layout_height="20dp"
+            android:visibility="gone"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/care_add"/>
+    </RelativeLayout>
+
+</LinearLayout>

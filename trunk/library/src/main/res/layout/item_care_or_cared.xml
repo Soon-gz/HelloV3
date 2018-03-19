@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="51dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/item_care_or_cared_headimg"
+            android:src="@drawable/head_holder"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+
+        <TextView
+            android:id="@+id/care_person_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/item_care_or_cared_headimg"
+            android:layout_marginLeft="10dp"
+            android:text="徐大明"/>
+
+        <ImageView
+            android:id="@+id/add_or_delete_care_iv"
+            android:layout_width="90dp"
+            android:layout_height="21dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/care_delete"/>
+    </RelativeLayout>
+
+    <View  style="@style/libCommon_divider_line"/>
+
+</LinearLayout>

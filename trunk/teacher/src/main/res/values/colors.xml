@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <array name="teachColorArray">
+        <item>0xCCF76969</item>
+        <item>0xCCFBB03B</item>
+        <item>0xCCDAE000</item>
+        <item>0xCC8CC63F</item>
+        <item>0xCC00A89C</item>
+        <item>0xCC29ABE2</item>
+        <item>0xCC036eb8</item>
+    </array>
+    <array name="teachColorArrayFF">
+        <item>0xFFF76969</item>
+        <item>0xFFFBB03B</item>
+        <item>0xFFDAE000</item>
+        <item>0xFF8CC63F</item>
+        <item>0xFF00A89C</item>
+        <item>0xFF29ABE2</item>
+        <item>0xFF036eb8</item>
+    </array>
+    <color name="subTitleColor">#FFF7F7F7</color>
+</resources>

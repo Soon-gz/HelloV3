@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:myview="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/eventlist_rl_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:divider="@color/libTitleBg"
+    android:orientation="vertical"
+    android:showDividers="end">
+
+    <LinearLayout
+        android:id="@+id/eventlist_ll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/attendance_item_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="2017-06-03 9:00 到校"
+            android:textColor="@color/black"
+            android:padding="20dp"
+            android:gravity="center"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:padding="10dp"
+            android:background="@drawable/attendance_index_bg"
+            android:orientation="vertical">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/attendance_item_head"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:src="@drawable/head_holder"
+                />
+
+            <TextView
+                android:id="@+id/attendance_item_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="呵呵呵"
+                android:textColor="@color/black"
+                android:paddingTop="10dp"
+                android:paddingBottom="5dp"
+                android:gravity="center"
+                android:textSize="@dimen/title_size" />
+
+            <TextView
+                android:id="@+id/attendance_item_rel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="爸爸"
+                android:paddingBottom="10dp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/title_size"
+                android:gravity="center"
+                />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

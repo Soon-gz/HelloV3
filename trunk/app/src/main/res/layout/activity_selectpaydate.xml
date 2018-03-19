@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:myview="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/normal_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.hellobaby.library.widget.TextViewPlus
+            android:id="@+id/selectpaydate_month"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/textview_height"
+            android:layout_marginTop="1dp"
+            android:background="@color/normal_textview"
+            android:drawableRight="@drawable/school_icon_cookbook"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/textview_start"
+            android:paddingRight="@dimen/textview_start"
+            android:textColor="@color/et_text_color"
+            android:text="5元/月"
+            android:textSize="@dimen/textview_text_size"
+            />
+
+        <com.hellobaby.library.widget.TextViewPlus
+            android:id="@+id/selectpaydate_term"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/textview_height"
+            android:layout_marginTop="1dp"
+            android:background="@color/normal_textview"
+            android:drawableRight="@drawable/school_icon_cookbook"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/textview_start"
+            android:paddingRight="@dimen/textview_start"
+            android:textColor="@color/et_text_color"
+            android:text="20元/学期"
+            android:textSize="@dimen/textview_text_size"
+            />
+
+        <com.hellobaby.library.widget.TextViewPlus
+            android:id="@+id/selectpaydate_year"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/textview_height"
+            android:layout_marginTop="1dp"
+            android:background="@color/normal_textview"
+            android:drawableRight="@drawable/school_icon_cookbook"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/textview_start"
+            android:paddingRight="@dimen/textview_start"
+            android:textColor="@color/et_text_color"
+            android:text="50元/年"
+            android:textSize="@dimen/textview_text_size"
+
+            />
+    </LinearLayout>
+    <TextView
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/textview_text_size"
+        android:paddingLeft="@dimen/textview_start"
+        android:paddingRight="@dimen/textview_start"
+       android:gravity="center"
+        android:layout_marginBottom="45dp"
+        android:text="开通后您可以免费观看宝宝所在班级的当日监控直播,
+        以及当日录像回放"
+        />
+</RelativeLayout>

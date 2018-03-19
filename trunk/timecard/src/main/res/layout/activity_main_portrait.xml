@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main_portrait"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.hellobaby.timecard.uiPortrait.MainActivity_portrait">
+
+    <!-- 考勤机首页  首页修改  直接展示拍摄界面 照相机保活 逻辑保留  2017-11-6 -->
+    <!--<RelativeLayout-->
+    <!--android:id="@+id/main_rl_main"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:background="@drawable/main_kaoqin_bg">-->
+
+    <!--<include-->
+    <!--android:id="@+id/main_top_ll"-->
+    <!--layout="@layout/main_top_layout"/>-->
+
+    <!--<RelativeLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_below="@+id/main_top_ll"-->
+    <!--android:layout_marginTop="420dp">-->
+
+    <!--<ImageView-->
+    <!--android:id="@+id/imageView2"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="180dp"-->
+    <!--android:layout_marginLeft="240dp"-->
+    <!--android:layout_marginRight="60dp"-->
+    <!--android:src="@drawable/main_log_hello_baby" />-->
+
+    <!--<RelativeLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_below="@+id/imageView2">-->
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignParentRight="true"-->
+    <!--android:layout_marginRight="60dp"-->
+    <!--android:orientation="vertical">-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/main_tv_schoolName"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="台州智塾科技有限公司"-->
+    <!--android:textColor="@color/white"-->
+    <!--android:textSize="60sp" />-->
+
+    <!--<ImageView-->
+    <!--android:id="@+id/main_tv_scan"-->
+    <!--android:layout_width="400dp"-->
+    <!--android:layout_height="100dp"-->
+    <!--android:layout_gravity="right"-->
+    <!--android:layout_marginTop="40dp"-->
+    <!--android:background="@drawable/scan_ts" />-->
+    <!--</LinearLayout>-->
+
+    <!--</RelativeLayout>-->
+    <!--</RelativeLayout>-->
+    <!--</RelativeLayout>-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!--照相机界面-->
+        <RelativeLayout
+            android:id="@+id/camera_rl_preview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.hellobaby.timecard.ui.camera.PictureSurfaceViewHalf
+                android:id="@+id/camera_pictureSurfaceView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:id="@+id/camera_tv_take"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="请对准镜头"
+                android:textColor="#FB9471"
+                android:textSize="50sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="650dp"
+                android:layout_alignParentBottom="true"
+                android:background="#f7f8f8" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/take_pircture_bg_new" />
+        </RelativeLayout>
+
+        <!--打卡时显示的用户信息-->
+        <LinearLayout
+            android:id="@+id/main_rl_camera_msg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="250dp"
+            android:visibility="gone">
+            <!--用户1信息-->
+            <LinearLayout
+                android:layout_width="290dp"
+                android:layout_height="290dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="190dp"
+                android:background="@drawable/picture_take_person_bg_1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/camera_civ_babyHead"
+                        android:layout_width="160dp"
+                        android:layout_height="160dp"
+                        android:src="@drawable/head_holder" />
+
+                    <TextView
+                        android:id="@+id/camera_tv_babyName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:singleLine="true"
+                        android:text="姓名:"
+                        android:textColor="@color/black"
+                        android:textSize="22sp" />
+
+                    <TextView
+                        android:id="@+id/camera_tv_class"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:text="班级:"
+                        android:textColor="@color/black"
+                        android:textSize="22sp" />
+                </LinearLayout>
+            </LinearLayout>
+            <!--用户2信息-->
+            <LinearLayout
+                android:id="@+id/timeCard_second_person"
+                android:layout_width="290dp"
+                android:layout_height="290dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="70dp"
+                android:background="@drawable/picture_take_person_bg_1"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/camera_civ_userHead"
+                        android:layout_width="160dp"
+                        android:layout_height="160dp"
+                        android:src="@drawable/head_holder" />
+
+                    <TextView
+                        android:id="@+id/camera_tv_userName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:singleLine="true"
+                        android:text="姓名："
+                        android:textColor="@color/black"
+                        android:textSize="22sp" />
+
+                    <TextView
+                        android:id="@+id/camera_tv_relation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:text="关系："
+                        android:textColor="@color/black"
+                        android:textSize="22sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <!--主页信息-->
+        <LinearLayout
+            android:id="@+id/main_ll_home"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="207dp"
+            android:orientation="vertical"
+            android:paddingRight="60dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/main_teacher_ts"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textSize="30sp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="30dp"
+                    android:text="教师考勤时间"/>
+
+                <!--设置按钮-->
+                <ImageView
+                    android:id="@+id/main_iv_setting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/main_btn_setting" />
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/main_tv_schoolName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="50dp"
+                android:text="椒江区智腾科技有限公司"
+                android:textColor="@color/white"
+                android:textSize="85sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/main_tv_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_gravity="right"
+                android:text="2017年11月6日"
+                android:textColor="@color/white"
+                android:textSize="70sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/main_tv_week"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@+id/main_tc_hhmm"
+                    android:text="星期五"
+                    android:textColor="@color/white"
+                    android:textSize="70sp" />
+
+                <com.hellobaby.timecard.widget.DigitalClock
+                    android:id="@+id/main_tc_hhmm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:textColor="@color/white"
+                    android:textSize="70sp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/mainCamera_iv_loading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/main_kaoqin_bg">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="100dp"
+            android:layout_marginRight="100dp"
+            android:src="@drawable/main_log_hello_baby" />
+    </RelativeLayout>
+
+</RelativeLayout>

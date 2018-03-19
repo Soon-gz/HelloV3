@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:myview="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+    <com.hellobaby.library.widget.TextViewPlus
+        android:id="@+id/aboutmeFamily_tv_cancelRel"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/textview_height"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/me_bottom_margin_bottom"
+        android:background="@color/normal_textview"
+        android:drawableRight="@drawable/et_deleteicon"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/textview_start"
+        android:paddingRight="@dimen/textview_start"
+        android:text="取消该关注成员"
+        android:textColor="@color/warming_red"
+        android:textSize="@dimen/textview_text_size"
+        android:visibility="gone"
+        myview:right_height="17dp"
+        myview:right_width="@dimen/textview_icon_size"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/normal_textview"
+            android:paddingLeft="@dimen/textview_start"
+            android:paddingRight="@dimen/textview_start">
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/aboutmeFamily_civ"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/head_holder"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_toEndOf="@+id/aboutmeFamily_civ"
+                android:layout_toRightOf="@+id/aboutmeFamily_civ"
+                android:gravity="right|center_vertical">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/aboutmeFamily_rv_relation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal"
+                    android:scrollbars="none"/>
+
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/MeFrgTextView"
+                android:text="家长姓名"/>
+
+            <com.hellobaby.library.widget.TextViewPlus
+                android:id="@+id/aboutmeFamily_tv_name"
+                style="@style/MeFrgTextViewPlus"
+                android:hint="暂无姓名信息"
+                myview:right_height="@dimen/textview_icon_size"
+                myview:right_width="@dimen/textview_icon_size"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/MeFrgTextView"
+                android:text="关系"/>
+
+            <com.hellobaby.library.widget.TextViewPlus
+                android:id="@+id/aboutmeFamily_tv_rel"
+                style="@style/MeFrgTextViewPlus"
+                android:hint="请选择关系"
+                myview:right_height="@dimen/textview_icon_size"
+                myview:right_width="@dimen/textview_icon_size"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/MeFrgTextView"
+                android:text="邮箱"/>
+
+            <com.hellobaby.library.widget.TextViewPlus
+                android:id="@+id/aboutmeFamily_tv_email"
+                style="@style/MeFrgTextViewPlus"
+                android:hint="暂无邮箱信息"
+                myview:right_height="@dimen/textview_icon_size"
+                myview:right_width="@dimen/textview_icon_size"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/MeFrgTextView"
+                android:text="手机"/>
+
+            <com.hellobaby.library.widget.TextViewPlus
+                android:id="@+id/aboutmeFamily_tv_phone"
+                style="@style/MeFrgTextViewPlus"
+                android:hint="暂无手机号"
+                myview:right_height="@dimen/textview_icon_size"
+                myview:right_width="@dimen/textview_icon_size"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/aboutmeFamily_ll_isPick"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/textview_height"
+            android:layout_marginTop="1dp"
+            android:background="@color/normal_textview"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/textview_start"
+            android:paddingRight="@dimen/textview_start">
+
+            <TextView
+                android:id="@+id/aboutmeFamily_tv_pick"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/textview_height"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:textColor="@color/et_text_color"
+                android:textSize="@dimen/textview_text_size" />
+
+            <com.hellobaby.library.widget.ToggleButton
+                android:id="@+id/aboutmeFamily_tb_isPick"
+                android:layout_width="40dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="20dp"
+                android:gravity="center_vertical"
+                myview:isDefaultOn="false"/>
+        </LinearLayout>
+
+        <com.hellobaby.library.widget.TextViewPlus
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/textview_height"
+            android:layout_marginTop="1dp"
+            android:background="@color/normal_textview"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/textview_start"
+            android:paddingRight="@dimen/textview_start"
+            android:text="账号绑定"
+            android:textColor="@color/et_text_color"
+            android:textSize="@dimen/textview_text_size"
+            android:visibility="gone"
+            myview:right_height="@dimen/textview_icon_size"
+            myview:right_width="@dimen/textview_icon_size"/>
+    </LinearLayout>
+</RelativeLayout>

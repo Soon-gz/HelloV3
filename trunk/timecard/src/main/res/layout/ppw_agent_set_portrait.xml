@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/ppwMenu_ll_root"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:gravity="center_horizontal"
+              android:background="@drawable/main_bg_home"
+              android:fitsSystemWindows="true"
+              android:orientation="vertical">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_marginLeft="160dp"
+        android:layout_marginRight="160dp"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/main_log_hello_baby"/>
+
+    <ImageView
+        android:id="@+id/ppwAgentSet_tv_song"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="240dp"
+        android:src="@drawable/song_logo"/>
+
+    <ImageView
+        android:id="@+id/ppwAgentSet_tv_jie"
+        android:layout_marginTop="220dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/jie_logo"/>
+</LinearLayout>

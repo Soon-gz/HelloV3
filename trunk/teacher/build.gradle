@@ -1,0 +1,97 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.neenbedankt.android-apt'
+
+android {
+    compileSdkVersion 24
+    buildToolsVersion "24.0.2"
+
+    defaultConfig {
+        applicationId "com.abings.baby.teacher"
+        minSdkVersion "${zsMinSdkVersion}"
+        targetSdkVersion "${zsTargetSdkVersion}"
+        versionCode 30
+        versionName "3.4.3"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+    }
+    signingConfigs {
+
+        release {
+            storeFile file("${zsAppKeystoreReleaseLocation}")
+            keyAlias "${zsAppReleaseKeyAlias}"
+            storePassword "${zsAppReleaseStorePassword}"
+            keyPassword "${zsAppReleaseKeyPassword}"
+        }
+
+        debug {
+            storeFile file("${zsAppKeystoreDebugLocation}")
+            keyAlias "${zsAppDebugKeyAlias}"
+            storePassword "${zsAppDebugStorePassword}"
+            keyPassword "${zsAppDebugKeyPassword}"
+        }
+    }
+
+    applicationVariants.all { variant ->
+        variant.outputs.each { output ->
+            if (output.outputFile != null && output.outputFile.name.endsWith('.apk') && ('debug'.equals(variant.buildType.name) || 'release'.equals(variant.buildType.name))) {
+                def apkFile = new File(
+                        output.outputFile.getParent(),
+                        "teacherV${variant.versionName}_${buildTime()}.apk")
+                output.outputFile = apkFile
+            }
+        }
+    }
+
+    buildTypes {
+        debug {
+            signingConfig signingConfigs.debug
+            debuggable true
+        }
+        release {
+            signingConfig signingConfigs.release
+
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    //Needed because of this https://github.com/square/okio/issues/58
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+    allprojects {
+        repositories {
+            maven { url "https://jitpack.io" }
+        }
+    }
+}
+
+
+dependencies {
+    //
+    final DAGGER2_VERSION = '2.7'
+    //
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    //
+    compile "com.google.dagger:dagger:$DAGGER2_VERSION"
+    //
+    apt "com.google.dagger:dagger-compiler:$DAGGER2_VERSION"
+    //
+    compile project(':library')
+    compile 'com.android.support:appcompat-v7:24.2.1'
+    compile 'com.android.support:support-v4:24.2.1'
+    compile 'com.zhy:flowlayout-lib:1.0.3'
+    compile 'org.greenrobot:eventbus:3.0.0'
+    compile 'com.github.sundeepk:compact-calendar-view:2.0.2'
+    testCompile 'junit:junit:4.12'
+}
+
+def buildTime() {
+    def date = new Date()
+    def formattedDate = date.format('yyyyMMdd')
+    return formattedDate
+}

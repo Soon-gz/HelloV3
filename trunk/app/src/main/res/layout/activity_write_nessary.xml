@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_baby_card_relation"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/normal_background"
+    tools:context="com.abings.baby.ui.babyCard.babyCardRelations.BabyCardRelationActivity">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/babycard_relation_surebtn"
+        android:layout_toEndOf="@+id/babycard_relation_surebtn">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/wn_head_img"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/head_holder"/>
+
+        <View style="@style/libCommon_divider_line"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+            <TextView
+                style="@style/babycardtext"
+                android:layout_marginLeft="10dp"
+                android:text="姓名"/>
+
+            <EditText
+                android:id="@+id/wn_name"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="20dp"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:background="@null"
+                android:hint="姓名"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <View style="@style/libCommon_divider_line"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+            <TextView
+                style="@style/babycardtext"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/black"
+                android:text="关系"/>
+
+            <TextView
+                android:id="@+id/wn_rel"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="20dp"
+                android:textSize="14sp"
+                android:gravity="center_vertical"
+                android:textColor="@color/black"
+                android:background="@null"
+                android:hint="关系"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <View style="@style/libCommon_divider_line"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+            <TextView
+                style="@style/babycardtext"
+                android:layout_marginLeft="10dp"
+                android:text="电话"/>
+
+            <TextView
+                android:id="@+id/wn_phone"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="20dp"
+                android:gravity="center_vertical"
+                android:textColor="@color/black"
+                android:inputType="number"
+                android:textSize="14sp"
+                android:background="@null"
+                android:hint="电话"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:paddingLeft="10dp"
+            android:gravity="center_vertical"
+            android:inputType="number"
+            android:textSize="14sp"
+            android:background="@color/normal_background"
+            android:text="(请完整填写以上信息,此信息会保存到个人中心)"
+            android:layout_height="40dp" />
+    </LinearLayout>
+    <Button
+        android:id="@+id/btn_succeed"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="确定"
+        style="@style/babycardbtn" />
+
+</RelativeLayout>

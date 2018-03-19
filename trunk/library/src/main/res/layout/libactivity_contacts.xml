@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <FrameLayout
+            android:id="@+id/content_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/user_recyclerview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="16dp"
+                    android:clipToPadding="false"
+                    android:scrollbars="none" />
+
+
+            <TextView
+                android:id="@+id/tv_recyclerindexview_topc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#eee"
+                android:paddingBottom="10dp"
+                android:paddingLeft="15dp"
+                android:paddingTop="10dp"
+                android:text="A"
+                android:textColor="#3c3c3c"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_recyclerindexview_tip"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:background="@drawable/shape_tip"
+                android:gravity="center"
+                android:text="A"
+                android:textColor="@android:color/white"
+                android:textSize="25sp"
+                android:visibility="gone"
+                tools:visibility="visible" />
+
+        </FrameLayout>
+        <com.hellobaby.library.widget.IndexView
+            android:layout_alignParentRight="true"
+            android:id="@+id/indexview"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="right|center"
+            android:background="@android:color/white" />
+    </RelativeLayout>
+
+
+
+</LinearLayout>

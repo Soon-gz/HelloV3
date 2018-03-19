@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/hisdetail_type"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_weight="2"
+        android:gravity="center_vertical"
+        android:padding="@dimen/title_padding"
+        android:text="到校"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/hisdetail_time"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_weight="2"
+        android:gravity="center_vertical|right"
+        android:padding="10dp"
+        android:text="9:00"
+        android:textColor="@color/black" />
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="4">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/hisdetail_head"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:src="@drawable/head_holder" />
+
+        <TextView
+            android:id="@+id/hisdetail_rel"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:padding="10dp"
+            android:text="爸爸"
+            android:textColor="@color/black"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/hisdetail_head"
+            android:layout_toEndOf="@+id/hisdetail_head"
+             />
+    </RelativeLayout>
+</LinearLayout>

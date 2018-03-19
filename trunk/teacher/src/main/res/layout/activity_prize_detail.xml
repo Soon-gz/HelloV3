@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:id="@+id/activity_prize_detail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/normal_background"
+    tools:context="com.abings.baby.teacher.ui.PrizeDraw.PrizeDetail.PrizeDetailActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/prize_detail_image"
+                android:src="@drawable/bg"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                />
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:id="@+id/detail_prize_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:padding="10dp"
+                android:background="@color/white"
+                android:text="奖品名称"/>
+
+            <RelativeLayout
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:padding="10dp"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:text="剩余:"/>
+                    <TextView
+                        android:id="@+id/detail_rest_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:padding="10dp"
+                        android:text="0"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/detail_prize_price"
+                        android:textColor="@color/black"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="0"/>
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/star"/>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_marginTop="20dp"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:textColor="@color/black"
+                    android:text="兑换商品说明:"/>
+                <com.abings.baby.teacher.ui.PrizeDraw.PrizeDetail.FullListView
+                    android:id="@+id/full_list_view"
+                    android:divider="@null"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </com.abings.baby.teacher.ui.PrizeDraw.PrizeDetail.FullListView>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/prize_detail_duihuan"
+                android:layout_width="260dp"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:background="@drawable/btn_bg_default"
+                android:layout_gravity="center_horizontal"
+                android:text="马上兑换"
+                android:layout_marginTop="40dp"
+                android:textColor="@color/white"
+                android:layout_marginBottom="20dp"/>
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/libMsgList_rl_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <View
+        style="@style/libCommon_divider_line"
+        android:layout_alignParentBottom="true"/>
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/libMsgList_civ_icon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/msgbox_icon_unread"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/libMsgList_tv_subject"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:gravity="center_vertical"
+                android:maxLines="2"
+                android:text="获得校园歌曲金奖，幼儿园十大歌获得校园歌曲金奖，幼儿园十大歌"
+                android:textColor="@color/black"
+                android:textSize="@dimen/title_size"/>
+            <!--   -->
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView_information"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="45dp"
+                android:scrollbars="none"/>
+            <!--   -->
+            <RelativeLayout
+                android:id="@+id/rl_information"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:layout_marginRight="45dp">
+
+                <ImageView
+                    android:id="@+id/im_information"
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp"
+
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginTop="2dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/login_helloybaby"/>
+
+                <ImageView
+                    android:id="@+id/video_play"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/video_play"
+                    />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/information_from"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="10dp"
+                android:text="来自于哈喽宝贝 2016年9月30日 20:20"
+                android:textSize="@dimen/common_size"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>
